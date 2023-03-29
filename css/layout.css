@@ -1,25 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=PT+Sans&display=swap');
-
-body {
-    font-family: 'Climate Crisis', cursive;
-    font-family: 'PT Sans', sans-serif;
-    color: white;
-    background-color: #181F66;
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:antiquewhite;
+    padding: 0in;
 }
 
-.titulo {
-    padding: 40 px;
+.cabecalho {
     text-align: center;
-}
-
-.imagem-tela-cheia {
-    width: 70%;
-    height: 70%;
-    object-fit: cover;
-    padding: 10px;
-    text-align: center;
-}
-
-. {
+    background-color:darksalmon;
+    color: aliceblue;
 
 }
+
+.imagens {
+    background-color: darkgreen;
+    width: 400px;
+    background-attachment:fixed;
+    border-color: black;
+    padding: 100px; 
+
+}
+.cabecalho{
+    display:inline-flexbox;
+
+}
+
+.alinhamento img{
+    width: 600px;
+}
+
+
+
+
