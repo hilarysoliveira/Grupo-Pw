@@ -1,5 +1,6 @@
-body {
-    margin: 0;
+body{
+    background-color:blueviolet;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .imagem1 {
@@ -7,5 +8,16 @@ body {
     height: 100%;
 }
 
+.esquerda{
+    width: 50%;
+}
 
+.subtitulos{
+    font-size:60px;
+    margin: 30px;
+}
 
+.texto{
+    margin: 90px;
+    font-size: 40px;
+}
