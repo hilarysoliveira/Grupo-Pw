@@ -3,17 +3,16 @@
 body{
     font-family: 'Bebas Neue', cursive;
     background-color: rgb(80, 117, 92);
-    padding: 10px;
 }
 
 .cabecalho{
-    padding: 30px;
+    padding: 300px;
     text-align: center;
     background-color: aliceblue;
 }
 
 .cabecalho h1{
-    font-size: 50pt;
+    font-size: 50px;
 }
 
 .topnav{
