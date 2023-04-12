@@ -1,36 +1,4 @@
-body{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color:antiquewhite;
-    padding: 0in;
-}
 
-.cabecalho {
-    text-align: center;
-    background-color:black;
-    color: aliceblue;
-
-}
-
-
-
-.imagens {
-    background-color: darkgreen;
-    width: 400px;
-    background-attachment:fixed;
-    border-color: black;
-    padding: 20px; 
-
-}
-.cabecalho{
-    display: inline-block;
-    text-align: center;
-    font-style: initial;
-
-}
-
-.alinhamento img{
-    width: 100px;
-}
 
 
 
