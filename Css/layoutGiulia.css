@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
 body {
     font-family: 'Bebas Neue', cursive;
     background-color: rgb(80, 117, 92);
@@ -16,8 +14,6 @@ body {
 
 .logo {
     width: 10%;
-    display: flex;
-    justify-content: center;
 }
 
 .container {
@@ -51,4 +47,21 @@ body {
 
 .topnav a:hover {
     background-color: #ddd; /* cor de fundo ao passar o mouse */
-  }
+}
+
+.rodape{
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.instagram{
+    width: 1.5%;
+}
+
+.frase{
+    text-align: center;
+}
+
+.textolink{
+    color: black;
+}
