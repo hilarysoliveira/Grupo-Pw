@@ -14,8 +14,6 @@ body {
 
 .logo {
     width: 10%;
-    display: flex;
-    justify-content: center;
 }
 
 .container {
@@ -49,4 +47,27 @@ body {
 
 .topnav a:hover {
     background-color: #ddd; /* cor de fundo ao passar o mouse */
-  }
+}
+
+.subtitulo{
+    text-align: center;
+    color: white;
+}
+
+.images{
+    width: 400px;
+    padding: 0.5%;
+}
+
+.rodape{
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.instagram{
+    width: 1.5%;
+}
+
+.frase{
+    text-align: center;
+}
