@@ -4,51 +4,6 @@ body {
 }
 
 .cabecalho {
-<<<<<<< Updated upstream
-    text-align: center;
-    background-color: #f2f2f2;
-    /*position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;*/
-}
-
-.logo {
-    width: 10%;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-}
-
-.topnav {
-    background-color: #f2f2f2;
-    /* cor de fundo */
-    overflow: hidden;
-    /* esconder o overflow */
-    display: flex;
-    justify-content: center;
-}
-
-.topnav a {
-    float: left;
-    /* alinhar à esquerda */
-    display: block;
-    /* exibir como bloco */
-    color: black;
-    /* cor do texto */
-    text-align: center;
-    /* alinhar o texto ao centro */
-    padding: 10px 50px;
-    /* espaçamento interno */
-    text-decoration: none;
-    /* remover decoração de link */
-}
-
-.topnav a:hover {
-    background-color: #ddd; /* cor de fundo ao passar o mouse */
-=======
     padding: 100px;
     text-align:justify;
     background-color: rgb(200, 255, 221);
@@ -60,7 +15,6 @@ body {
     padding: 300px;
     text-align:justify;
     background-color: rgb(63, 73, 82);
->>>>>>> Stashed changes
 }
 
 .cabecalho h1 {
@@ -69,14 +23,8 @@ body {
 
 .imagesHilary {
     background-color: rgb(0, 0, 0);
-<<<<<<< Updated upstream
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-=======
     width: 300%;
     padding: 100px;
->>>>>>> Stashed changes
 }
 
 .card {
@@ -94,37 +42,6 @@ body {
     width: 500px;
 }
 
-<<<<<<< Updated upstream
-.rodape{
-    background-color: #f2f2f2;
-    text-align: center;
-}
-
-.instagram{
-    width: 1.5%;
-}
-
-.frase{
-    text-align: center;
-}
-
-.textolink{
-    color: black;
-}
-
-p {
-    line-height: 1.5;
-   
-  }
-
-  .article{
-    border-radius: 50pt;
-    background: rgba(180, 252, 213, 0.685) ;
-    
-    
-  }
- 
-=======
 .alinhamentoo {
     display:block;
     text-align:justify;
@@ -137,4 +54,3 @@ p {
     border-bottom: 100px;
     text-align: center;
 }
->>>>>>> Stashed changes
