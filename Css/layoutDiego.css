@@ -46,7 +46,7 @@ body {
 }
 
 .topnav a:hover {
-    background-color: #ddd; /* cor de fundo ao passar o mouse */
+    background-color: white; /* cor de fundo ao passar o mouse */
 }
 
 .subtitulo{
@@ -70,4 +70,16 @@ body {
 
 .textolink{
     color: black;
+}
+main{
+    margin: 50px;
+    color: white;
+}
+
+.cabecalho{
+    color: black;
+}
+
+{
+    background-color: black;
 }
