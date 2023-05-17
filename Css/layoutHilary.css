@@ -1,56 +1,73 @@
 body {
     font-family: 'Bebas Neue', cursive;
-    background-color: rgb(46, 168, 95);
+    background-color: rgb(120, 162, 134);
 }
 
 .cabecalho {
-    padding: 100px;
-    text-align:justify;
-    background-color: rgb(200, 255, 221);
-    
-    
-}
-
-.cabecalho2 {
-    padding: 300px;
-    text-align:justify;
-    background-color: rgb(63, 73, 82);
-}
-
-.cabecalho h1 {
-    font-size: 50px;
-}
-
-.imagesHilary {
-    background-color: rgb(0, 0, 0);
-    width: 300%;
-    padding: 100px;
-}
-
-.card {
-    background-color: rgb(17, 114, 82);
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-.cabecalho img {
-    width: 100px;
-}
-
-.alinhamento {
-    display: block;;
-    width: 500px;
-}
-
-.alinhamentoo {
-    display:block;
-    text-align:justify;
-    width: 500px;
-   
-}
-
-.footer{
-    background-color: green;
-    border-bottom: 50px;
     text-align: center;
+    background-color: #f2f2f2;
+    /*position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;*/
+}
+
+.logo {
+    width: 10%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.topnav {
+    background-color: #f2f2f2;
+    /* cor de fundo */
+    overflow: hidden;
+    /* esconder o overflow */
+    display: flex;
+    justify-content: center;
+}
+
+.topnav a {
+    float: left;
+    /* alinhar à esquerda */
+    display: block;
+    /* exibir como bloco */
+    color: black;
+    /* cor do texto */
+    text-align: center;
+    /* alinhar o texto ao centro */
+    padding: 10px 50px;
+    /* espaçamento interno */
+    text-decoration: none;
+    /* remover decoração de link */
+}
+
+.topnav a:hover {
+    background-color: #ddd; /* cor de fundo ao passar o mouse */
+}
+
+.subtitulo{
+    text-align: center;
+    color: white;
+}
+
+.images{
+    width: 400px;
+    padding: 0.5%;
+}
+
+.rodape{
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.instagram{
+    width: 1.5%;
+}
+
+.textolink{
+    color: black;
 }
