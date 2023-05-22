@@ -1,6 +1,8 @@
 body {
     font-family: 'Bebas Neue', cursive;
-    background-color: rgb(120, 162, 134);
+    background-image: url(/imagesHilary/fundo.png); 
+    background: no-repeat;
+    
 }
 
 .cabecalho {
@@ -54,9 +56,9 @@ body {
     color: white;
 }
 
-.images{
-    width: 400px;
-    padding: 0.5%;
+.Principal img{
+    width: 500px;
+    padding: 50px;
 }
 
 .rodape{
