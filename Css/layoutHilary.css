@@ -71,3 +71,7 @@ body {
 .textolink{
     color: black;
 }
+
+main{
+    margin: 50px;
+}
