@@ -79,3 +79,24 @@ main{
 .cabecalho{
     color: black;
 }
+
+.elementos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.item1{
+    width:74%;
+}
+
+.item2{
+    width:24%;
+}
+
+.botao{
+    text-align: center;
+}
+
+.btn_btn-primary{
+    width: 10%;
+}
