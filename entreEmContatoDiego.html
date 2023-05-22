@@ -47,16 +47,18 @@
                 <label for="inputEndereco" class="form-label">Endereço</label>
                 <input type="text" class="form-control" id="inputEndereco" placeholder="Rua, número">
             </div>
-            <div class="col-md-6">
-                <label for="inputCidade" class="form-label">Cidade</label>
-                <input type="text" class="form-control" id="inputCidade">
-            </div>
-            <div class="col-md-4">
-                <label for="inputEstado" class="form-label">Estado</label>
-                <select id="inputEstado" class="form-select">
-                    <option selected>Escola uma opção</option>
-                    <option>...</option>
-                </select>
+            <div class="elementos">
+                <div class="item1">
+                    <label for="inputCidade" class="form-label">Cidade</label>
+                    <input type="text" class="form-control" id="inputCidade">
+                </div>
+                <div class="item2">
+                    <label for="inputEstado" class="form-label">Estado</label>
+                    <select id="inputEstado" class="form-select">
+                        <option selected>Escola uma opção</option>
+                        <option>...</option>
+                    </select>
+                </div>
             </div>
             <div>
                 <label for="inputMotivo" class="form-label">Motivo do contato</label>
@@ -71,11 +73,10 @@
                 </div>
             <div class="butto">
                 <div class="col-12">
-                    <button type="submit" class="btn btn-primary" style="background-color: black">Enviar</button>
+                    <div class="botao">
+                        <button type="submit" class="btn btn-primary" style="background-color: black">Enviar</button>
+                    </div>
                 </div>
-            </div>
-            <div>
-
             </div>
         </form>
     </main>
