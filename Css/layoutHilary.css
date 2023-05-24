@@ -1,7 +1,8 @@
 body {
     font-family: 'Bebas Neue', cursive;
     background-image: url(/imagesHilary/fundo.png); 
-    background: no-repeat;
+    background-size: 100%;
+    
     
 }
 
@@ -75,5 +76,12 @@ body {
 }
 
 main{
-    margin: 50px;
+    margin: 10px;
+}
+
+.Hilary img{
+
+    width: 500px;
+    padding: 20px;
+
 }
