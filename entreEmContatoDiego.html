@@ -22,7 +22,7 @@
             <nav class="topnav">
                 <a href="homeDiego.html">Home</a>
                 <a href="revelacaofotosHilary.html">Revelações</a>
-                <a href="galeriaFotosGiulia.html">Galeria de Fotos</a>
+                <a href="galeriaFotosHilary.html">Galeria de Fotos</a>
                 <a href="sobreNosHilary.html">Quem Somos?</a>
                 <a href="entreEmContatoDiego.html">Entre em contato</a>
                 <a href="trabalheconoscoHilary.html">Trabalhe conosco</a>
@@ -33,24 +33,24 @@
             
             <div class="col-md-6">
                 <label for="inputNome" class="form-label">Nome</label>
-                <input type="text" class="form-control" id="inputNome">
+                <input type="text" class="form-control" id="inputNome" maxlength="50" minlenght="1" required pattern="[a-z]{50}">
             </div>
             <div class="col-md-6">
                 <label for="inputEmail" class="form-label">Email</label>
-                <input type="text" class="form-control" id="inputEmail">
+                <input type="text" class="form-control" id="inputEmail" required>
             </div>
             <div class="col-12">
                 <label for="inputTelefone" class="form-label">Telefone</label>
-                <input type="text" class="form-control" id="inputTelefone">
+                <input type="text" class="form-control" id="inputTelefone" required>
             </div>
             <div class="col-12">
                 <label for="inputEndereco" class="form-label">Endereço</label>
-                <input type="text" class="form-control" id="inputEndereco" placeholder="Rua, número">
+                <input type="text" class="form-control" id="inputEndereco" placeholder="Rua, número" required>
             </div>
             <div class="elementos">
                 <div class="item1">
                     <label for="inputCidade" class="form-label">Cidade</label>
-                    <input type="text" class="form-control" id="inputCidade">
+                    <input type="text" class="form-control" id="inputCidade" required>
                 </div>
                 <div class="item2">
                     <label for="inputEstado" class="form-label">Estado</label>
@@ -62,11 +62,11 @@
             </div>
             <div>
                 <label for="inputMotivo" class="form-label">Motivo do contato</label>
-                <input type="text" class="form-control" id="inputMotivo">
+                <input type="text" class="form-control" id="inputMotivo" required>
             </div>
             <div class="col-12">
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <input class="form-check-input" type="checkbox" id="gridCheck" required>
                     <label class="form-check-label" for="gridCheck">
                         Autorizo a HS Fotografias a entrar em contato comigo
                     </label>
@@ -80,6 +80,14 @@
             </div>
         </form>
     </main>
+    <footer>
+        <div class="rodape">
+            <p>Contato: (69) 9 xxxx-xxxx</p>
+            <a href="https://www.instagram.com/hilarysouzafotografias/"><img src="imagesDiego/logoInsta.png" alt="" class="instagram"></a>
+            <a href="https://www.instagram.com/hilarysouzafotografias/" class="textolink">@HilarySouzaFotografias</a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
