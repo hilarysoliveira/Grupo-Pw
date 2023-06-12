@@ -1,104 +1,78 @@
 body {
     font-family: 'Bebas Neue', cursive;
     background-color: rgb(120, 162, 134);
+    margin: 0%;
 }
 
-.cabecalho {
+header {
     text-align: center;
     background-color: #f2f2f2;
-    /*position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;*/
+
+    .logo {
+        width: 10%;
+    }
+
+    .topnav {
+        background-color: #f2f2f2;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+    .topnav a {
+        color: black;
+        padding: 10px 50px;
+        text-decoration: none;
+    }
 }
 
-.logo {
-    width: 10%;
+main{
+    .images {
+        width: 400px;
+        padding: 0.5%;
+    }
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-}
-
-.topnav {
-    background-color: #f2f2f2;
-    /* cor de fundo */
-    overflow: hidden;
-    /* esconder o overflow */
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 10%;
-}
-
-.topnav a {
-    float: left;
-    /* alinhar à esquerda */
-    display: block;
-    /* exibir como bloco */
-    color: black;
-    /* cor do texto */
-    text-align: center;
-    /* alinhar o texto ao centro */
-    padding: 10px 50px;
-    /* espaçamento interno */
-    text-decoration: none;
-    /* remover decoração de link */
-}
-
-.topnav a:hover {
-    background-color: white; /* cor de fundo ao passar o mouse */
-}
-
-.subtitulo{
-    text-align: center;
-    color: white;
-}
-
-.images{
-    width: 400px;
-    padding: 0.5%;
-}
-
-.rodape{
+.rodape {
     background-color: #f2f2f2;
     text-align: center;
 }
 
-.instagram{
+.instagram {
     width: 1.5%;
 }
 
-.textolink{
+.textolink {
     color: black;
 }
-main{
+
+main {
     margin: 50px;
     color: white;
 }
 
-.cabecalho{
+.cabecalho {
     color: black;
 }
 
-.elementos{
+.elementos {
     display: flex;
     justify-content: space-between;
 }
 
-.item1{
-    width:74%;
+.item1 {
+    width: 74%;
 }
 
-.item2{
-    width:24%;
+.item2 {
+    width: 24%;
 }
 
-.botao{
+.botao {
     text-align: center;
 }
 
-.btn_btn-primary{
+.btn_btn-primary {
     width: 10%;
 }
