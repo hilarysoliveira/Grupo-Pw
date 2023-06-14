@@ -1,4 +1,4 @@
-# Grupo-Pw-tema-5--Fotos
+# HSfotografias
 
 > Status do projeto: Em desenvolvimento pelos alunos do IFRO
 
