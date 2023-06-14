@@ -17,3 +17,13 @@ function validaCampo(campo){
         }
     }
 }
+
+function submitForm(event){
+    event.preventDefault();
+
+    const nome = document.getElementById("nome").value;
+    const telefone = document.getElementById("telefone").value;
+    const email = document.getElementById("email").value;
+    
+
+}
