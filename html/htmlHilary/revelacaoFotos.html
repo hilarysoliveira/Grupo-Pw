@@ -1,102 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Css/layoutDiego.css">
-    <link rel="stylesheet" href="Css/layoutHilary.css">
-    
-    
-
- 
-    <title>Revelação de Fotos</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/Css/layoutHilary.css">
+  <title>Revelação de Fotos</title>
 </head>
+
 <body>
-    <header>
-        <div class="cabecalho">
-            <div class="container">
-                <img src="imagesHilary/imagem1.png" alt="" class="logo">
-            </div>
-            <h1>HS FOTOGRAFIAS</h1>
-            <p class="lema">A fotografia tem o poder de eternizar a efemeridade. 🥀🎥</p>
-            <nav class="topnav">
-              <a href="homeDiego.html">Home</a>
-              <a href="revelacaofotosHilary.html">Revelações</a>
-              <a href="galeriaFotosHilary.html">Galeria de Fotos</a>
-              <a href="sobreNosHilary.html">Quem Somos?</a>
-              <a href="entreEmContatoDiego.html">Entre em contato</a>
-              <a href="trabalheconoscoHilary.html">Trabalhe conosco</a>
-            </nav>
+  <header>
+    <img src="/imagens/imagesDiego/imagem1.png" alt="" class="logo">
+    <h1>HS FOTOGRAFIAS</h1>
+    <p>A fotografia tem o poder de eternizar a efemeridade</p>
+    <nav class="topnav">
+      <a href="/html/htmlDiego/home.html">Voltar ao início</a>
+      <a href="/html/htmlDiego/entreEmContato.html">Entre em contato</a>
+      <a href="/html/htmlHilary/galeriaFotos.html">Galeria de fotos</a>
+      <a href="/html/htmlHilary/sobreNos.html">Sobre nós</a>
+      <a href="/html/htmlHilary/trabalheConosco.html">Trabalhe conosco</a>
+    </nav>
+  </header>
+
+  <main>
+    <form class="row g-3">
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail4">
+      </div>
+      <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">Password</label>
+        <input type="password" class="form-control" id="inputPassword4">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Address</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress2" class="form-label">Address 2</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+      </div>
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">City</label>
+        <input type="text" class="form-control" id="inputCity">
+      </div>
+      <div class="col-md-4">
+        <label for="inputState" class="form-label">State</label>
+        <select id="inputState" class="form-select">
+          <option selected>Choose...</option>
+          <option>...</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <label for="inputZip" class="form-label">Zip</label>
+        <input type="text" class="form-control" id="inputZip">
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            Check me out
+          </label>
         </div>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Sign in</button>
+      </div>
+    </form>
 
-    </header>
 
-    <main>
-        <form class="row g-3">
-            <div class="col-md-6">
-              <label for="inputEmail4" class="form-label">Email</label>
-              <input type="email" class="form-control" id="inputEmail4">
-            </div>
-            <div class="col-md-6">
-              <label for="inputPassword4" class="form-label">Password</label>
-              <input type="password" class="form-control" id="inputPassword4">
-            </div>
-            <div class="col-12">
-              <label for="inputAddress" class="form-label">Address</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-            </div>
-            <div class="col-12">
-              <label for="inputAddress2" class="form-label">Address 2</label>
-              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-            </div>
-            <div class="col-md-6">
-              <label for="inputCity" class="form-label">City</label>
-              <input type="text" class="form-control" id="inputCity">
-            </div>
-            <div class="col-md-4">
-              <label for="inputState" class="form-label">State</label>
-              <select id="inputState" class="form-select">
-                <option selected>Choose...</option>
-                <option>...</option>
-              </select>
-            </div>
-            <div class="col-md-2">
-              <label for="inputZip" class="form-label">Zip</label>
-              <input type="text" class="form-control" id="inputZip">
-            </div>
-            <div class="col-12">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
-                  Check me out
-                </label>
-              </div>
-            </div>
-            <div class="col-12">
-              <button type="submit" class="btn btn-primary">Sign in</button>
-            </div>
-          </form>
-       
-          
-          <div class="input-group mb-3">
-            <input type="file" class="form-control" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03" aria-label="Upload" type ="file" multiple/>
-            <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon03">Salvar</button>
-          </div>
-          
-          
-
-    </main>
-
-    <footer>
-      <div class="rodape">
-        <p>Contato: (69) 9 xxxx-xxxx</p>
-        <a href="https://www.instagram.com/hilarysouzafotografias/"><img src="imagesDiego/logoInsta.png" alt="" class="instagram"></a>
-        <a href="https://www.instagram.com/hilarysouzafotografias/" class="textolink">@HilarySouzaFotografias</a>
+    <div class="input-group mb-3">
+      <input type="file" class="form-control" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03"
+        aria-label="Upload" type="file" multiple />
+      <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon03">Salvar</button>
     </div>
+  </main>
 
-
-    </footer>
+  <footer>
+    <a href="https://www.instagram.com/hilarysouzafotografias/"><img src="/imagens/imagesDiego/logoInsta.png" alt=""
+        class="logoInsta"></a>
+    <a href="https://www.instagram.com/hilarysouzafotografias/" class="textoLink">@HilarySouzaFotografias</a>
+  </footer>
 </body>
+
 </html>

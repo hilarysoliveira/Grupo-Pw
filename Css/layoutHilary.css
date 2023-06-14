@@ -1,87 +1,76 @@
 body {
-    font-family: 'Bebas Neue', cursive;
-    background-image: url(/imagesHilary/fundo.png); 
+    background-image: url(/imagens/imagesHilary/fundo.png); 
     background-size: 100%;
-    
-    
-}
-
-.cabecalho {
-    text-align: center;
-    background-color: #f2f2f2;
-    /*position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;*/
-}
-
-.logo {
-    width: 10%;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-}
-
-.topnav {
-    background-color: #f2f2f2;
-    /* cor de fundo */
-    overflow: hidden;
-    /* esconder o overflow */
-    display: flex;
-    justify-content: center;
-}
-
-.topnav a {
-    float: left;
-    /* alinhar à esquerda */
-    display: block;
-    /* exibir como bloco */
-    color: black;
-    /* cor do texto */
-    text-align: center;
-    /* alinhar o texto ao centro */
-    padding: 10px 50px;
-    /* espaçamento interno */
-    text-decoration: none;
-    /* remover decoração de link */
-}
-
-.topnav a:hover {
-    background-color: #ddd; /* cor de fundo ao passar o mouse */
-}
-
-.subtitulo{
-    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0%;
+    background: radial-gradient(farthest-corner at left top, var(--gradiente1), var(--gradiente2));
     color: white;
 }
 
-.Principal img{
+:root {
+    --gradiente1: cyan;
+    --gradiente2: purple;
+}
+
+html {
+    min-height: 120%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    text-align: center;
+    background: rgba(177, 99, 99, 0);
+    color: white;
+
+    .logo {
+        width: 10%;
+    }
+
+    .topnav {
+        background: white;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .topnav a {
+        color: black;
+        padding: 10px 50px;
+        text-decoration: none;
+    }
+}
+
+main{
+    text-align: center;
+    margin: 10px auto 0;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.principal img{
     width: 500px;
     padding: 50px;
 }
 
-.rodape{
-    background-color: #f2f2f2;
+footer {
+    background: white;
     text-align: center;
+    padding: 1%;
+    text-decoration: none;
+
+    .logoInsta {
+        width: 1.5%;
+    }
+
+    .textoLink {
+        color: black;
+        text-decoration: none;
+    }
 }
 
-.instagram{
-    width: 1.5%;
-}
-
-.textolink{
-    color: black;
-}
-
-main{
-    margin: 10px;
-}
-
-.Hilary img{
-
+/*.Hilary img{
     width: 500px;
     padding: 20px;
-
-}
+}*/
