@@ -4,3 +4,13 @@ inputs.forEach((elemento) => {
         console.log("sair")
     });
 });
+
+
+function Enviar(){
+    const inputNome = document.getElementById("inputNome");
+// Limpar os campos
+inputCPF.value = "";
+inputNome.value = "";
+inputEmail.value = "";
+inputCelular.value = "";
+}

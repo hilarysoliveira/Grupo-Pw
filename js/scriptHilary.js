@@ -24,6 +24,4 @@ function submitForm(event){
     const nome = document.getElementById("nome").value;
     const telefone = document.getElementById("telefone").value;
     const email = document.getElementById("email").value;
-    
-
 }

@@ -42,7 +42,6 @@ header {
 main {
     margin: 3%;
     color: white;
-    text-align: center;
 
     .subtitulo {
         text-align: center;
@@ -71,6 +70,7 @@ main {
         .botao {
             text-align: center;
             margin-left: 59.8%;
+            cursor: pointer;
 
             .enviar {
                 border-radius: 10px;
@@ -78,6 +78,14 @@ main {
                 border-color: rgba(255, 255, 255, 0);
                 padding: 9%;
             }
+        }
+
+        .botao:hover {
+            background-color: #c43e3e;
+        }
+
+        .enviar {
+            border-radius: 10px;
         }
     }
 

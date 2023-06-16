@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="imagesDiego/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/Css/layoutDiego.css">
     <title>Login</title>
 </head>
@@ -18,8 +18,8 @@
         <p>A fotografia tem o poder de eternizar a efemeridade</p>
         <nav class="topnav">
             <a href="home.html">Home</a>
-            <a href="/html/htmlDIego/entreEmContato.html">Entre em contato</a>
-            <a href="/html/htmlDIego/feedback.html">Feedback</a>
+            <a href="/html/htmlDiego/entreEmContato.html">Entre em contato</a>
+            <a href="/html/htmlDiego/feedback.html">Feedback</a>
             <a href="/html/htmlHilary/galeriaFotos.html">Galeria de fotos</a>
             <a href="/html/htmlHilary/revelacaoFotos.html">Revelações de fotos</a>
             <a href="/html/htmlHilary/sobreNos.html">Sobre nós</a>
@@ -33,16 +33,15 @@
 
             <div class="col-md-6">
                 <label for="inputNome" class="form-label">Nome</label>
-                <input type="text" class="form-control" id="inputNome" maxlength="50" minlenght="1" required
-                    pattern="[a-z]{50}">
+                <input type="text" class="form-control" id="inputNome" maxlength="50" minlenght="1" required>
             </div>
             <div class="col-md-6">
                 <label for="inputEmail" class="form-label">Email</label>
-                <input type="text" class="form-control" id="inputEmail" required>
+                <input type="email" class="form-control" id="inputEmail" required>
             </div>
             <div class="col-12">
                 <label for="inputTelefone" class="form-label">Telefone</label>
-                <input type="text" class="form-control" id="inputTelefone" required>
+                <input type="tel" class="form-control" id="inputTelefone" required>
             </div>
             <div class="col-12">
                 <label for="inputEndereco" class="form-label">Rua e número</label>
@@ -55,7 +54,7 @@
                 </div>
                 <div class="item2">
                     <label for="inputEstado" class="form-label">Estado</label>
-                    <select id="inputEstado" class="form-select">
+                    <select id="inputEstado" class="form-select" required>
                         <option selected></option>
                         <option value="Acre">Acre</option>
                         <option value="Alagoas">Alagoas</option>
@@ -108,7 +107,7 @@
                 class="logoInsta"></a>
         <a href="https://www.instagram.com/hilarysouzafotografias/" class="textoLink">@HilarySouzaFotografias</a>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="/js/scriptDiego.js"></script>
 </body>
 
 </html>
