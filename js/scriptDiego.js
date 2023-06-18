@@ -1,16 +1,18 @@
-const inputs = document.querySelectorAll("[required]");
-inputs.forEach((elemento) => {
-    elemento.addEventListener("blur", (evento)=>{
-        console.log("sair")
-    });
-});
-
-
-function Enviar(){
+function validar() {
     const inputNome = document.getElementById("inputNome");
-// Limpar os campos
-inputCPF.value = "";
-inputNome.value = "";
-inputEmail.value = "";
-inputCelular.value = "";
+    const inputEmail = document.getElementById("inputEmail");
+    const inputTelefone = document.getElementById("inputTelefone");
+    const inputEndereco = document.getElementById("inputEndereco");
+    const inputCidade = document.getElementById("inputCidade");
+    const inputEstado = document.getElementById("inputEstado");
+    const inputMotivo = document.getElementById("inputMotivo");
+    const gridCheck = document.getElementById("gridCheck");
+    const mensagemErro = document.getElementById("mensagemErro");
+
+    if (inputNome.value.length < 2 || inputNome.value.length > 50) {
+        mensagemErro.textContent = "Nome inválido. Insira um nome com 2 a 50 caracteres.";
+        return; // interrompe a execução se houver erro
+    }
 }
+
+document.querySelector("form").addEventListener("submit", validar);
