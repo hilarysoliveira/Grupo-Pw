@@ -1,4 +1,7 @@
 const form = document.querySelector("form");
+const phone = document.getElementById("phone").value;
+
+    
 form.addEventListener("submit", submitForm);
 
 const inputs = document.querySelectorAll("[required]");
@@ -50,6 +53,8 @@ function validPhone(campo) {
       alert("O número de telefone informado é inválido");
     
  }
+
+ 
 
 function validarEmail(email) {
     const regex = /\S+@\S+\.\S+/;
