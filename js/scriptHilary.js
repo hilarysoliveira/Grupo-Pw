@@ -48,12 +48,26 @@ function validPhone(campo) {
     const regex = /^\(\d{2}\) \d{4,5}-\d{4}$/;
     if (!regex.test(telefone)) {
       alert("O número de telefone informado é inválido");
-    }
-  }
+    
+ }
+  
 
 function validarEmail(email) {
     const regex = /\S+@\S+\.\S+/;
     if (!regex.test(email)) {
       alert("O e-mail informado é inválido");
     }
+  }
+
+  function validarCEP(cep) {
+    const regex = /^\d{5}-\d{3}$/;
+    if (!regex.test(cep)) {
+      alert("O CEP informado é inválido");
+      return false;
+    }
+    
+    // Aplica a máscara de CEP
+    $('#inputZip').mask('00000-000');
+    
+    return true;
   }
