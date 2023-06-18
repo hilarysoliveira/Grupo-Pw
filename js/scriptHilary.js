@@ -18,6 +18,16 @@ function validaCampo(campo){
     }
 }
 
+function Enviar(){
+    const inputNome = document.getElementById("inputNome");
+// Limpar os campos
+inputCPF.value = "";
+inputNome.value = "";
+inputEmail.value = "";
+inputCelular.value = "";
+}
+
+
 function submitForm(event){
     event.preventDefault();
 
