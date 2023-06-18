@@ -29,9 +29,6 @@
     <main>
         <h2 class="subtitulo">Entre em contato</h2>
         <form class="row g-3">
-            <div class="msg">
-                <p class="mensagemErro" id="mensagemErro">Preencha os campos e clique no botão Salvar</p>
-            </div>
             <div class="col-md-6">
                 <label for="inputNome" class="form-label">Nome</label>
                 <input type="text" class="form-control" id="inputNome">
@@ -98,9 +95,11 @@
                         Autorizo a HS Fotografias a entrar em contato comigo
                     </label>
                     <div class="botao">
-                        <button type="submit" class="enviar" onclick="validar()">Enviar</button>
-                        <button class="btSalvar" onclick="validar()" type="submit">Salvar</button>
+                        <button class="enviar" onclick="validar()" type="submit" id="buttonEnviar">Enviar</button>
                     </div>
+                </div>
+                <div class="msg">
+                    <p class="mensagemErro" id="mensagemErro">Preencha os campos e clique no botão Salvar</p>
                 </div>
         </form>
     </main>
