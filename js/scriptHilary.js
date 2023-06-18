@@ -50,14 +50,13 @@ function validPhone(campo) {
       alert("O número de telefone informado é inválido");
     
  }
-  
 
 function validarEmail(email) {
     const regex = /\S+@\S+\.\S+/;
     if (!regex.test(email)) {
       alert("O e-mail informado é inválido");
     }
-  }
+  }}
 
   function validarCEP(cep) {
     const regex = /^\d{5}-\d{3}$/;

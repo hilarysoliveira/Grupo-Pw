@@ -44,8 +44,8 @@
         <div class="col-12">
           <label for="telefone_validation" class="form-label">Número de Telefone</label>
           <input type="tel" onchange="validPhone(this.value)" minlength="4" maxlength="15" name="telefone" class="form-control" id="telefone"
-            pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}" placeholder="Digite seu número de telefone"
-            oninput="telefone_validation(this)"><span class="mensagem-erro" data-erro></span>
+            pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}" placeholder="Digite seu número de telefone">
+          <span class="mensagem-erro" data-erro></span>
 
         </div>
 
@@ -117,7 +117,7 @@
       </div>
 
       <div class="col-12">
-        <button type="submit" onclick='limpar()' class="btn btn-primary">Enviar</button>
+        <button type="submit" onclick='limpar(this.value)' class="btn btn-primary">Enviar</button>
         
       </div>
 
