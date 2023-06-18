@@ -1,5 +1,5 @@
 body {
-    background-image: url(/imagens/imagesHilary/fundo.png); 
+    background-image: url(/imagens/imagesHilary/fundo.png);
     background-size: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0%;
@@ -30,53 +30,6 @@ header {
         background: white;
         overflow: hidden;
         display: flex;
-        justify-content: left;
-        width: 100%;
-        text-align: center;
-    }
-
-    .topnav a {
-        color: black;
-        padding: 1% 2%;
-        text-decoration: none;
-    }
-}
-
-main{
-    text-align: center;
-    margin: 10px auto 0;
-    margin-left: 3%;
-    margin-right: 3%;
-}
-
-.principal img{
-    width: 500px;
-    padding: 50px;
-}
-
-footer {
-    background: white;
-    text-align: center;
-    padding: 1%;
-    text-decoration: none;
-
-    .logoInsta {
-        width: 1.5%;
-    }
-
-    header {
-    text-align: center;
-    background: rgba(177, 99, 99, 0);
-    color: white;
-
-    .logo {
-        width: 10%;
-    }
-
-    .topnav {
-        background: white;
-        overflow: hidden;
-        display: flex;
         justify-content: center;
         width: 100%;
         text-align: center;
@@ -92,7 +45,6 @@ footer {
 main {
     margin: 3%;
     color: white;
-    text-align: center;
 
     .subtitulo {
         text-align: center;
@@ -145,7 +97,7 @@ main {
         padding: 1%;
     }
 
-    .msg{
+    .msg {
         background: white;
         width: 35%;
         color: black;
@@ -155,6 +107,11 @@ main {
         text-align: center;
         margin-bottom: 0px;
     }
+}
+
+.principal img {
+    width: 500px;
+    padding: 50px;
 }
 
 footer {
@@ -173,13 +130,7 @@ footer {
     }
 }
 
-    .textoLink {
-        color: black;
-        text-decoration: none;
-    }
+.textoLink {
+    color: black;
+    text-decoration: none;
 }
-
-/*.Hilary img{
-    width: 500px;
-    padding: 20px;
-}*/
