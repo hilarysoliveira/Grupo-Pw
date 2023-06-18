@@ -23,11 +23,6 @@ function validar(event) {
         return; // interrompe a execução se houver erro
     }
 
-    if (inputCelular.value.length < 10 || inputCelular.value.length > 20) {
-        mensagemErro.textContent = "Celular inválido. Insira um celular com 10 a 20 caracteres.";
-        return; // interrompe a execução se houver erro
-    }
-
     // Validar formato do número de celular
     const regexCelular = /^\d{10,20}$/;
     if (!regexCelular.test(inputCelular.value)) {
@@ -65,6 +60,15 @@ function validar(event) {
     }
 
     mensagemErro.textContent = "Enviado com sucesso!";
+
+    inputNome.value = "";
+    inputEmail.value = "";
+    inputCelular.value = "";
+    inputEndereco.value = "";
+    inputCidade.value = "";
+    inputEstado.value = "";
+    inputMotivo.value = "";
+    gridChec.checked = false;
 }
 
 function checkbox() {
@@ -110,26 +114,30 @@ function validarFeedback() {
     const inputNome = document.getElementById('inputNome');
     const inputEmail = document.getElementById('inputEmail');
     const inputCelular = document.getElementById('inputCelular');
-    const inputClassificacao = document.getElementById('inputClassficacao');
-    const inputClassificacao2 = document.getElementById('inputClassficacao2');
-    const inputClassificacao3 = document.getElementById('inputClassficacao3');
+    const inputClassificacao = document.getElementById('inputClassificacao');
+    const inputClassificacao2 = document.getElementById('inputClassificacao2');
+    const inputClassificacao3 = document.getElementById('inputClassificacao3');
     const mensagemErro = document.getElementById("mensagemErro");
 
-    if (simCheck.checked === false && naoCheck.checked == false) {
+    if (simCheck.checked === false && naoCheck.checked === false) {
         mensagemErro.textContent = "Você primeiro precisa escolher se quer se identificar ou não"
-        return
+        return;
     };
 
     if (simCheck.checked === true) {
+
+        // Validar o formato de Nome
         if (inputNome.value.length < 2 || inputNome.value.length > 50) {
             mensagemErro.textContent = "Nome inválido. Insira um nome com 2 a 50 caracteres.";
             return; // Interrompe a execução se houver erro
         }
+
+        // Validar o formato de E-mail
         if (inputEmail.value.length < 5 || inputEmail.value.length > 50) {
             mensagemErro.textContent = "E-mail inválido. Insira um e-mail com 5 a 50 caracteres.";
             return; // interrompe a execução se houver erro
         }
-    
+
         // Validar formato do número de celular
         const regexCelular = /^\d{10,20}$/;
         if (!regexCelular.test(inputCelular.value)) {
@@ -137,12 +145,14 @@ function validarFeedback() {
             return; // interrompe a execução se houver erro
         }
     }
-    //verifica se todos os campos foram preenchidos
-    if (inputClassificacao.value.length === "" || inputClassificacao2.value.length === "" || inputClassificacao3.value.length === "") {
-        mensagemErro.textContent = "Para enviar o formulário é necessário responder às 3 perguntas de baixo.";
-        return;
+
+    //verifica se os campos de feedback foram preenchidos
+    if (inputClassificacao.value.length === 0 || inputClassificacao2.value.length === 0 || inputClassificacao3.value.length === 0) {
+        mensagemErro.textContent = "Para enviar o formulário é necessário responder às 3 perguntas de feedback.";
+        return; // interrompe a execução se houver erro
     }
-    mensagemErro.value = "Enviado com sucesso!";
+
+    mensagemErro.textContent = "Enviado com sucesso!";
 
     inputNome.value = "";
     inputEmail.value = "";
