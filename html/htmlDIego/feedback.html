@@ -3,114 +3,38 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagesDiego/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/Css/layoutDiego.css">
     <title>Feedback</title>
 </head>
 
-<header>
-    <img src="/imagens/imagesDiego/imagem1.png" alt="" class="logo">
-    <h1>HS FOTOGRAFIAS</h1>
-    <p>A fotografia tem o poder de eternizar a efemeridade</p>
-    <nav class="topnav">
-        <a href="/html/htmlDiego/home.html">Home</a>
-        <a href="/html/htmlDiego/entreEmContato.html">Entre em contato</a>
-        <a href="/html/htmlDiego/feedback.html">Feedback</a>
-        <a href="/html/htmlHilary/galeriaFotos.html">Galeria de fotos</a>
-        <a href="/html/htmlHilary/revelacaoFotos.html">Revelações de fotos</a>
-        <a href="/html/htmlHilary/sobreNos.html">Sobre nós</a>
-        <a href="/html/htmlHilary/trabalheConosco.html">Trabalhe conosco</a>
-    </nav>
-</header>
-
-<main>
-    <h2 class="subtitulo">Feedback</h2>
-    <form id="formFeedback">
-      <div class="row">
-        <div class="col-md-6">
-          <label for="inputNome">Nome</label>
-          <input type="text" id="inputNome" required>
-        </div>
-        <div class="col-md-6">
-          <label for="inputEmail">Email</label>
-          <input type="email" id="inputEmail" required>
-        </div>
-        <div class="col-md-6">
-          <label for="inputTelefone">Telefone</label>
-          <input type="tel" id="inputTelefone" required>
-        </div>
-        <div class="col-md-6">
-          <label for="inputMotivo">Motivo do contato</label>
-          <input type="text" id="inputMotivo" required>
-        </div>
-        <div class="col-md-6">
-          <label for="inputCidade">Cidade</label>
-          <input type="text" id="inputCidade" required>
-        </div>
-        <div class="col-md-6">
-          <label for="inputEstado">Estado</label>
-          <select id="inputEstado" required>
-            <option selected></option>
-                        <option value="Acre">Acre</option>
-                        <option value="Alagoas">Alagoas</option>
-                        <option value="Amapá">Amapá</option>
-                        <option value="Amazonas">Amazonas</option>
-                        <option value="Bahia">Bahia</option>
-                        <option value="Ceará">Ceará</option>
-                        <option value="Distrito Federal">Distrito Federal</option>
-                        <option value="Espírito Santo">Espírito Santo</option>
-                        <option value="Goiás">Goiás</option>
-                        <option value="Maranhão">Maranhão</option>
-                        <option value="Mato Grosso">Mato Grosso</option>
-                        <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
-                        <option value="Minas Gerais">Minas Gerais</option>
-                        <option value="Pará">Pará</option>
-                        <option value="Paraíba">Paraíba</option>
-                        <option value="Paraná">Paraná</option>
-                        <option value="Pernambuco">Pernambuco</option>
-                        <option value="Piauí">Piauí</option>
-                        <option value="Rio de Janeiro">Rio de Janeiro</option>
-                        <option value="Rio Grande do Sul">Rio Grande do Sul</option>
-                        <option value="Rio Grande do Norte">Rio Grande do Norte</option>
-                        <option value="Rondônia">Rondônia</option>
-                        <option value="Roraima">Roraima</option>
-                        <option value="Santa Catarina">Santa Catarina</option>
-                        <option value="São Paulo">São Paulo</option>
-                        <option value="Sergipe">Sergipe</option>
-                        <option value="Tocantins">Tocantins</option>
-            <!-- Opções do estado aqui -->
-          </select>
-        </div>
-        <div class="col-md-6">
-          <label for="inputComentario">Comentário</label>
-          <textarea id="inputComentario" rows="4" required></textarea>
-        </div>
-        <div class="col-md-6">
-          <label for="inputAvaliacao">Avaliação</label>
-          <select id="inputAvaliacao" required>
-            <option value="">Selecione</option>
-            <option value="1">Ruim</option>
-            <option value="2">Regular</option>
-            <option value="3">Bom</option>
-            <option value="4">Ótimo</option>
-          </select>
-        </div>
-        <div class="col-12">
-          <input type="checkbox" id="gridCheck" required>
-          <label for="gridCheck">Autorizo a HS Fotografias a entrar em contato comigo</label>
-        </div>
-        <div class="col-12">
-          <button type="submit">Enviar</button>
-        </div>
-      </div>
-    </form>
-    <div id="mensagemErro" class="msg"></div>
-</main>
-
-<footer>
-    <a href="https://www.instagram.com/hilarysouzafotografias/"><img src="/imagens/imagesDiego/logoInsta.png" alt=""
-            class="logoInsta"></a>
-    <a href="https://www.instagram.com/hilarysouzafotografias/" class="textoLink">@HilarySouzaFotografias</a>
-</footer>
+<body>
+    <header>
+        <img src="/imagens/imagesDiego/imagem1.png" alt="" class="logo">
+        <h1>HS FOTOGRAFIAS</h1>
+        <p>A fotografia tem o poder de eternizar a efemeridade</p>
+        <nav class="topnav">
+            <a href="home.html">Home</a>
+            <a href="/html/htmlDiego/entreEmContato.html">Entre em contato</a>
+            <a href="/html/htmlDiego/feedback.html">Feedback</a>
+            <a href="/html/htmlHilary/galeriaFotos.html">Galeria de fotos</a>
+            <a href="/html/htmlHilary/revelacaoFotos.html">Revelações de fotos</a>
+            <a href="/html/htmlHilary/sobreNos.html">Sobre nós</a>
+            <a href="/html/htmlHilary/trabalheConosco.html">Trabalhe conosco</a>
+        </nav>
+    </header>
+    <main>
+        
+    </main>
+    <footer>
+        <a href="https://www.instagram.com/hilarysouzafotografias/"><img src="/imagens/imagesDiego/logoInsta.png" alt=""
+                class="logoInsta"></a>
+        <a href="https://www.instagram.com/hilarysouzafotografias/" class="textoLink">@HilarySouzaFotografias</a>
+    </footer>
+    <script src="/js/scriptDiego.js"></script>
+</body>
 
 </html>

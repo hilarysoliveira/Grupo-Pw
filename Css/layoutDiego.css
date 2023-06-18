@@ -42,7 +42,6 @@ header {
 main {
     margin: 3%;
     color: white;
-    text-align: center;
 
     .subtitulo {
         text-align: center;
@@ -95,15 +94,17 @@ main {
         padding: 1%;
     }
 
-    .msg{
-        background: white;
-        width: 35%;
-        color: black;
-        padding: 0.1%;
-        border-radius: 10px;
-        margin: 0 auto;
+    .msg {
         text-align: center;
-        margin-bottom: 0px;
+        background: white;
+        color: black;
+        width: 30%;
+        margin: 1% auto 0;
+        border-radius: 10px;
+        
+        .mensagemErro{
+            padding: 1%;
+        }
     }
 }
 
