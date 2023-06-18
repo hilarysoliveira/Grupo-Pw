@@ -60,6 +60,22 @@ main {
         }
     }
 
+    .anonimo {
+        text-align: center;
+
+        .input1 {
+            margin-left: 2%;
+            border-radius: 10px;
+            border: none;
+        }
+
+        .input2 {
+            margin-left: 3%;
+            border-radius: 10px;
+            border: none;
+        }
+    }
+
     .form-check {
         display: flex;
 
@@ -96,14 +112,77 @@ main {
 
     .msg {
         text-align: center;
-        background: white;
-        color: black;
+        color: white;
         width: 30%;
         margin: 1% auto 0;
         border-radius: 10px;
-        
-        .mensagemErro{
+
+        .mensagemErro {
             padding: 1%;
+        }
+    }
+
+    .mensagemErro {
+        color: white;
+        padding: 1%;
+    }
+
+    .cadastro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .div {
+            padding: 0.1%;
+            width: 100%;
+
+            .itens {
+                width: 80%;
+                border-radius: 10px;
+                border: none;
+                padding: 1%;
+            }
+        }
+    }
+
+    .avaliacao {
+        margin-top: 5%;
+        text-align: center;
+
+        .classificacao {
+            padding: 0.4%;
+            border-radius: 10px;
+            border: none;
+            width: 20%;
+        }
+
+        .classificacao2 {
+            padding: 0.4%;
+            border-radius: 10px;
+            border: none;
+            width: 23%;
+        }
+
+        .classificacao3 {
+            padding: 0.4%;
+            border-radius: 10px;
+            border: none;
+            width: 19.1%;
+        }
+
+        .div2 {
+            padding: 1%;
+        }
+    }
+    .botao {
+        text-align: center;
+        
+
+        .enviar {
+            border: none;
+            border-radius: 10px;
+            padding: 0.6%;
         }
     }
 }
