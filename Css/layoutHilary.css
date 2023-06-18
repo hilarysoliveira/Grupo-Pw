@@ -30,7 +30,7 @@ header {
         background: white;
         overflow: hidden;
         display: flex;
-        justify-content: center;
+        justify-content: left;
         width: 100%;
         text-align: center;
     }

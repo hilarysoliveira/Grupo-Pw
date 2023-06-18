@@ -1,3 +1,6 @@
+const form = document.querySelector("form");
+form.addEventListener("submit", submitForm);
+
 const inputs = document.querySelectorAll("[required]");
 inputs.forEach( (elemento) => {
     elemento.addEventListener("blur", (evento)=>{
@@ -27,6 +30,10 @@ inputEmail.value = "";
 inputCelular.value = "";
 }
 
+function limpar() {
+    // Código da função de limpeza aqui
+    console.log("Função de limpeza chamada!");
+}
 
 function submitForm(event){
     event.preventDefault();
@@ -35,3 +42,18 @@ function submitForm(event){
     const telefone = document.getElementById("telefone").value;
     const email = document.getElementById("email").value;
 }
+
+function validPhone(campo) {
+    const telefone = campo.value;
+    const regex = /^\(\d{2}\) \d{4,5}-\d{4}$/;
+    if (!regex.test(telefone)) {
+      alert("O número de telefone informado é inválido");
+    }
+  }
+
+function validarEmail(email) {
+    const regex = /\S+@\S+\.\S+/;
+    if (!regex.test(email)) {
+      alert("O e-mail informado é inválido");
+    }
+  }
