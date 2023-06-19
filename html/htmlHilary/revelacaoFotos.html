@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -26,30 +26,44 @@
   </header>
 
   <main>
+
+
     <h2 class="subtitulo">Revelação de Fotos</h2>
+    <div class="msg">
+      <p class="mensagemErro" id="mensagemErro"></p>
+    </div>
     <form class="row g-3">
       <div class="col-md-6">
-        <label for="inputEmail4" class="form-label">Email</label>
-        <input type="email" class="form-control" id="inputEmail4"
-          placeholder="Digite seu e-mail para avisos prévio sobre a entrega das fotos">
+        <label for="inputNome" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="inputNome">
       </div>
       <div class="col-md-6">
+        <label for="inputEmail" class="form-label">E-mail</label>
+        <input type="email" class="form-control" id="inputEmail">
+      </div>
+      <div class="col-12">
+        <label for="inputTelefone" class="form-label">Telefone</label>
+        <input type="tel" class="form-control" id="inputTelefone">
+      </div>
+
+
+      <div class="col-md-6">
         <label for="qtde" class="form-label">Quantidade fotos</label>
-        <input type="number" class="form-control" id="inputPassword4">
+        <input type="number" class="form-control" id="inputFotos">
       </div>
       <div class="col-12">
         <label for="inputAddress" class="form-label">Formato</label>
-        <input type="text" class="form-control" id="inputAddress"
+        <input type="text" class="form-control" id="inputFormato"
           placeholder="Escreva o formato para a revelação das fotos">
       </div>
       <div class="col-12">
         <label for="inputAddress2" class="form-label">Medida</label>
-        <input type="text" class="form-control" id="inputAddress2"
+        <input type="text" class="form-control" id="inputMedida"
           placeholder="Escreva a medida em que você quer as fotos">
       </div>
       <div class="col-md-6">
         <label for="inputCity" class="form-label">Cidade</label>
-        <input type="text" class="form-control" id="inputCity" placeholder="Digite sua cidade">
+        <input type="text" class="form-control" id="inputCidade" placeholder="Digite sua cidade">
       </div>
       <div class="col-md-4">
         <label for="inputState" class="form-label">Estado</label>
@@ -85,45 +99,54 @@
         </select>
       </div>
 
+
       <div class="col-md-2">
         <label for="inputZip" class="form-label">Código Postal</label>
         <input type="text" onchange="validarCEP(this.value)" class="form-control" id="inputZip"
           placeholder="Digite seu CEP">
       </div>
 
+
       <div class="col-12">
         <div class="form-check">
 
+
           <label class="form-check-label" for="gridCheck">
             Selecione as fotos que deseja revelar
+            <div class="input-group mb-3">
+              <input type="file" class="form-control" id="buttonEnviar" aria-describedby="inputGroupFileAddon03"
+                aria-label="Upload" type="file" multiple />
+              <button class="enviar" onclick="revelacao()" type="submit" id="buttonEnviar">Salvar</button>
+            </div>
           </label>
         </div>
       </div>
 
+
     </form>
 
-
-    <div class="input-group mb-3">
-      <input type="file" class="form-control" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03"
-        aria-label="Upload" type="file" multiple />
-      <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon03">Salvar</button>
-    </div>
-
-
-
-    <div class="col-12">
-      <div class="col-12">
-        <button type="submit" class="btn btn-primary">Enviar Pedido</button>
+      <div class="botao">
+       
+        <button class="enviar" onclick="revelacao()" type="submit" id="buttonEnviar">Enviar Pedido</button>
       </div>
+
+
     </div>
+
 
   </main>
 
+
+
+
   <footer>
-    <a href="https://www.instagram.com/hilarysouzafotografias/"><img src="../../imagens/imagesDiego/logoInsta.png" alt=""
-        class="logoInsta"></a>
+    <a href="https://www.instagram.com/hilarysouzafotografias/"><img src="../../imagens/imagesDiego/logoInsta.png"
+        alt="" class="logoInsta"></a>
     <a href="https://www.instagram.com/hilarysouzafotografias/" class="textoLink">@HilarySouzaFotografias</a>
   </footer>
+
+  <script src="../../js/scriptHilary.js"> </script>
+
 </body>
 
 </html>
