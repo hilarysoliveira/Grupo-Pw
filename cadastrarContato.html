@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Css/layoutDiego.css">
-    <link rel="stylesheet" href="bootstrap/js/bootstrap.min.js">
-    <link rel="shortcut icon" href="../../imagens/imagesDiego/imagem1.png" type="image/x-icon">
+    <link rel="stylesheet" href="Css/cadastrarContato.css">
+    <link rel="shortcut icon" href="imagens/imagem1.png" type="image/x-icon">
     <title>Entre em contato</title>
 </head>
 
@@ -16,7 +15,6 @@
         <img src="imagens/imagem1.png" alt="" class="logo">
         <h1>HS FOTOGRAFIAS</h1>
         <p>A fotografia tem o poder de eternizar a efemeridade</p>
-        <p>Breve introdução ao propósito do site.</p>
         <nav class="topnav">
             <a href="home.html">Home</a>
             <a href="sobreNos.html">Sobre nós</a>
@@ -32,31 +30,30 @@
         <div class="msg">
             <p class="mensagemErro" id="mensagemErro"></p>
         </div>
-        <form class="row g-3">
-            <div class="col-md-6">
-                <label for="inputNome" class="form-label">Nome</label>
-                <input type="text" class="form-control" id="inputNome">
+        <form>
+            <div class="elemento">
+                <label>Nome</label>
+                <input class="input">
             </div>
-            <div class="col-md-6">
-                <label for="inputEmail" class="form-label">E-mail</label>
-                <input type="email" class="form-control" id="inputEmail">
+            <div class="elemento">
+                <label>E-mail</label>
+                <input class="input">
             </div>
-            <div class="col-12">
-                <label for="inputTelefone" class="form-label">Telefone</label>
-                <input type="tel" class="form-control" id="inputTelefone">
+            <div class="elemento">
+                <label>Telefone</label>
+                <input class="input">
             </div>
-            <div class="col-12">
-                <label for="inputEndereco" class="form-label">Rua e número</label>
-                <input type="text" class="form-control" id="inputEndereco">
+            <div class="elemento">
+                <label>Rua e número</label>
+                <input class="input">
             </div>
-            <div class="elementos">
-                <div class="item1">
-                    <label for="inputCidade" class="form-label">Cidade</label>
-                    <input type="text" class="form-control" id="inputCidade">
-                </div>
-                <div class="item2">
-                    <label for="inputEstado" class="form-label">Estado</label>
-                    <select id="inputEstado" class="form-select">
+            <div class="elemento">
+                <label>Cidade</label>
+                <input class="input">
+            </div>
+            <div class="elemento">
+                <label">Estado</label>
+                    <select class="input">
                         <option selected></option>
                         <option value="Acre">Acre</option>
                         <option value="Alagoas">Alagoas</option>
@@ -86,30 +83,28 @@
                         <option value="Sergipe">Sergipe</option>
                         <option value="Tocantins">Tocantins</option>
                     </select>
-                </div>
             </div>
-            <div>
-                <label for="inputMotivo" class="form-label">Motivo do contato</label>
-                <input type="text" class="form-control" id="inputMotivo">
+            <div class="elemento">
+                <label>Motivo do contato</label>
+                <input class="input">
             </div>
-            <div class="col-12">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                        Autorizo a HS Fotografias a entrar em contato comigo
-                    </label>
-                    <div class="botao">
-                        <button class="enviar" onclick="validar()" type="submit" id="buttonEnviar">Enviar</button>
-                    </div>
-                </div>
+            <div class="elemento">
+                <input type="checkbox" class="checkbox">
+                <label>
+                    Autorizo a HS Fotografias a entrar em contato comigo
+                </label>
+            </div>
+            <div class="botao">
+                <button class="enviar" onclick="validar()" type="submit" id="buttonEnviar">Enviar</button>
+            </div>
         </form>
     </main>
     <footer>
-        <a href="https://www.instagram.com/hilarysouzafotografias/"><img src="../../imagens/imagesDiego/logoInsta.png" alt=""
+        <a href="https://www.instagram.com/hilarysouzafotografias/"><img src="imagens/logoInsta.png" alt=""
                 class="logoInsta"></a>
         <a href="https://www.instagram.com/hilarysouzafotografias/" class="textoLink">@HilarySouzaFotografias</a>
     </footer>
-    <script src="../../js/scriptDiego.js"></script>
+    <script src="js/scriptDiego.js"></script>
 </body>
 
 </html>
