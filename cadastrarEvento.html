@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/Hilary.css">
+    <link rel="shortcut icon" href="imagens/imagesDiego/imagem1.png" type="image/x-icon">
     <title>Evento</title>
 </head>
 <body>
@@ -11,7 +14,7 @@
         <img src="imagens/imagem1.png" alt="" class="logo">
         <h1>HS FOTOGRAFIAS</h1>
         <p>A fotografia tem o poder de eternizar a efemeridade</p>
-        <p>Breve introdução ao propósito do site</p>
+        <p>Breve introdução ao propósito do site.</p>
         <nav class="topnav">
             <a href="home.html">Home</a>
             <a href="sobreNos.html">Sobre nós</a>
@@ -22,5 +25,68 @@
             <a href="cadastrarRevelacao.html">Revelações</a>
         </nav>
     </header>
+
+   
+    <form>
+        <p>Preencha os campos com as Informações de endereço do ensaio</p>
+        <label for="rua">Rua:</label>
+        <input type="text" id="rua" name="rua" required><br>
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" required><br>
+
+        <label for="estado">Estado:</label>
+        <input type="text" id="estado" name="estado" required><br>
+
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep" required><br>
+
+        <label for="pais">País:</label>
+        <input type="text" id="pais" name="pais" required><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <label for="data">Selecione a data do ensaio:</label>
+    <input type="date" id="data" name="data">
+
+    <form>
+        <label for="hora">Selecione a hora do ensaio:</label>
+        <input type="time" id="hora" name="hora">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <label for="tiposEnsaio">Escolha o tipo de ensaio fotográfico:</label>
+    <select id="tiposEnsaio" name="tiposEnsaio">
+        <option value="Retrato">Retrato</option>
+        <option value="Ensaio de Moda">Ensaio de Moda</option>
+        <option value="Ensaio de Casamento">Ensaio de Casamento</option>
+        <option value="Ensaio de Família">Ensaio de Família</option>
+        <option value="Ensaio de Gestante">Ensaio de Gestante</option>
+        <option value="Ensaio de Recém-nascido">Ensaio de Recém-nascido</option>
+        <option value="Fotografia de Natureza">Fotografia de Natureza</option>
+        <option value="Fotografia de Paisagem">Fotografia de Paisagem</option>
+        <option value="Fotografia de Viagem">Fotografia de Viagem</option>
+        <option value="Fotografia de Alimentos">Fotografia de Alimentos</option>
+        <option value="Fotografia de Produtos">Fotografia de Produtos</option>
+        <option value="Fotografia de Arquitetura">Fotografia de Arquitetura</option>
+        <option value="Fotografia de Eventos">Fotografia de Eventos</option>
+        <option value="Fotografia de Esportes">Fotografia de Esportes</option>
+        <option value="Ensaio Documental">Ensaio Documental</option>
+        <option value="Ensaio de Street Photography">Ensaio de Street Photography</option>
+        <option value="Fotografia de Animais de Estimação">Fotografia de Animais de Estimação</option>
+        <option value="Fotografia Macro">Fotografia Macro</option>
+        <option value="Fotografia Aérea">Fotografia Aérea</option>
+        <option value="Fotografia Noturna">Fotografia Noturna</option>
+    </select>
+
+   
 </body>
+
+<footer>
+    <a href="https://www.instagram.com/hilarysouzafotografias/"><img src="../../imagens/imagesDiego/logoInsta.png" alt=""
+            class="logoInsta"></a>
+    <a href="https://www.instagram.com/hilarysouzafotografias/" class="textoLink">@HilarySouzaFotografias</a>
+</footer>
+
 </html>

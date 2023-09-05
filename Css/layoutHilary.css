@@ -21,92 +21,92 @@ header {
     text-align: center;
     background: rgba(177, 99, 99, 0);
     color: white;
+}
 
-    .logo {
-        width: 10%;
-    }
+header .logo {
+    width: 10%;
+}
 
-    .topnav {
-        background: white;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        text-align: center;
-    }
+header .topnav {
+    background: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
 
-    .topnav a {
-        color: black;
-        padding: 1% 2%;
-        text-decoration: none;
-    }
+header .topnav a {
+    color: black;
+    padding: 1% 2%;
+    text-decoration: none;
 }
 
 main {
     margin: 3%;
     color: white;
+}
 
-    .subtitulo {
-        text-align: center;
-    }
+main .subtitulo {
+    text-align: center;
+}
 
-    .elementos {
-        display: flex;
-        justify-content: space-between;
+main .elementos {
+    display: flex;
+    justify-content: space-between;
+}
 
-        .item1 {
-            width: 74%;
-        }
+main .elementos .item1 {
+    width: 74%;
+}
 
-        .item2 {
-            width: 24%;
-        }
-    }
+main .elementos .item2 {
+    width: 24%;
+}
 
-    .form-check {
-        display: flex;
+main .form-check {
+    display: flex;
+}
 
-        .form-check-label {
-            margin-left: 1%;
-        }
+main .form-check .form-check-label {
+    margin-left: 1%;
+}
 
-        .botao {
-            text-align: center;
-            margin-left: 59.8%;
-            cursor: pointer;
+main .form-check .botao {
+    text-align: center;
+    margin-left: 59.8%;
+    cursor: pointer;
+}
 
-            .enviar {
-                border-radius: 10px;
-                background: white;
-                border-color: rgba(255, 255, 255, 0);
-                padding: 9%;
-            }
-        }
+main .form-check .botao .enviar {
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    border-color: rgba(255, 255, 255, 0);
+    padding: 9%;
+}
 
-        .botao:hover {
-            background-color: #c43e3e;
-        }
+main .form-check .botao:hover {
+    background-color: #c43e3e;
+}
 
-        .enviar {
-            border-radius: 10px;
-        }
-    }
+main .form-check .enviar {
+    border-radius: 10px;
+}
 
-    .images {
-        width: 32%;
-        padding: 1%;
-    }
+main .images {
+    width: 32%;
+    padding: 1%;
+}
 
-    .msg {
-        background: rgba(255, 255, 255, 0);
-        width: 35%;
-        color: black;
-        padding: 0.1%;
-        border-radius: 10px;
-        margin: 0 auto;
-        text-align: center;
-        margin-bottom: 0px;
-    }
+main .msg {
+    background: rgba(255, 255, 255, 0);
+    width: 35%;
+    color: black;
+    padding: 0.1%;
+    border-radius: 10px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 0px;
 }
 
 .principal img {
@@ -119,15 +119,15 @@ footer {
     text-align: center;
     padding: 1%;
     text-decoration: none;
+}
 
-    .logoInsta {
-        width: 1.5%;
-    }
+footer .logoInsta {
+    width: 1.5%;
+}
 
-    .textoLink {
-        color: black;
-        text-decoration: none;
-    }
+footer .textoLink {
+    color: black;
+    text-decoration: none;
 }
 
 .textoLink {

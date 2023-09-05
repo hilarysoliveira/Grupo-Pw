@@ -1,0 +1,143 @@
+/* Reset de estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o corpo da página */
+body {
+    background-color: #f0f0f0;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header .logo {
+    width: 100px;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+header p {
+    font-size: 14px;
+}
+
+p{
+    height: initial;
+}
+
+/* Estilos para a barra de navegação */
+header .topnav {
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+header .topnav a {
+    float: left;
+    display: flex;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+header .topnav a:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+/* Estilos para o formulário */
+form {
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+form p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+label {
+    margin: 20px; /* Define 10 pixels de margem em todas as direções para todos os labels */
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Estilos para o select */
+select {
+    width: 50%;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+   
+}
+
+/* Estilos gerais para o footer */
+footer {
+    background-color: #333; /* Cor de fundo do footer */
+    color: #fff; /* Cor do texto no footer */
+    text-align: center; /* Alinhamento de texto ao centro */
+    padding: 20px 0; /* Espaçamento interno (topo e base) */
+}
+
+/* Estilos para links no footer */
+footer a {
+    color: #fff; /* Cor dos links no footer */
+    text-decoration: none; /* Remover sublinhado dos links */
+    margin: 0 10px; /* Espaçamento horizontal entre os links */
+}
+
+/* Estilos para hover (quando o mouse passa sobre os links) */
+footer a:hover {
+    text-decoration: underline; /* Adicionar sublinhado ao passar o mouse */
+}
+
+/* Outros estilos específicos para a página */
+/* Adicione-os conforme necessário */
+
