@@ -16,7 +16,7 @@ header {
 }
 
 .logo {
-    width: 40%;
+    width: 30%;
 }
 
 .topnav {
@@ -84,14 +84,17 @@ button.enviar {
     border-radius: 5px;
     padding: 10px 20px;
     /* Adicione um pouco de preenchimento para tornar o botão mais visível e clicável */
-    background-color: #007bff;
+    background-color: white;
     /* Cor de fundo azul para destacar o botão */
-    color: white;
-    /* Cor do texto no botão */
     font-size: 16px;
     /* Tamanho da fonte do botão */
     cursor: pointer;
     /* Transforma o cursor em uma mão ao passar sobre o botão */
+}
+
+.botao .enviar:active {
+    background-color: #999999;
+    /* Altere a cor de fundo desejada quando clicado */
 }
 
 .botao {
@@ -100,7 +103,7 @@ button.enviar {
 
 /* Estilo ao passar o mouse sobre o botão */
 button.enviar:hover {
-    background-color: #0056b3;
+    background-color: #b4b4b4;
     /* Cor de fundo mais escura ao passar o mouse */
 }
 
