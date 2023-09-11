@@ -16,7 +16,7 @@ header {
 }
 
 .logo {
-    width: 10%;
+    width: 40%;
 }
 
 .topnav {
@@ -28,6 +28,16 @@ header {
     text-align: center;
 }
 
+.topnav .botaoM:hover {
+    background-color: #b4b4b4; /* Altere a cor de fundo desejada */
+    transform: scale(1.05); /* Aumenta o tamanho do botão ao passar o mouse */
+}
+
+/* Efeito de clique (ativo) */
+.topnav .botaoM:active {
+    background-color: #999999; /* Altere a cor de fundo desejada quando clicado */
+}
+
 .topnav a {
     color: black;
     padding: 1% 2%;
@@ -37,6 +47,9 @@ header {
 main {
     margin: 3%;
     color: black;
+    .lastLabel{
+        margin-bottom: 2%;
+    }
 }
 
 .elemento {
@@ -62,8 +75,8 @@ main {
 }
 
 .checkbox {
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
 }
 
 button.enviar {
