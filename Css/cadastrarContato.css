@@ -98,17 +98,27 @@ button.enviar:hover {
 }
 
 footer {
-    background: white;
+    background: #333;
     text-align: center;
-    display: flex;
-    justify-content: center;
-}
-
-.logoInsta {
-    width: 1.5%;
-}
-
-.textoLink {
-    color: black;
+    padding: 1%;
     text-decoration: none;
+
+    .logoInsta {
+        width: 4%;
+    }
+
+    .linkI {
+        color: white;
+        text-decoration: none;
+    }
+
+    .linkI:hover {
+        background-color: #b4b4b4; /* Altere a cor de fundo desejada */
+        transform: scale(1.05); /* Aumenta o tamanho do botão ao passar o mouse */
+    }
+    
+    /* Efeito de clique (ativo) */
+    .linkI:active {
+        background-color: #999999; /* Altere a cor de fundo desejada quando clicado */
+    }
 }
