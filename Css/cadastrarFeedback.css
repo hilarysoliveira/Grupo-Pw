@@ -1,12 +1,7 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0%;
-    background: radial-gradient(farthest-corner at left top, var(--gradiente1), var(--gradiente2));
-}
-
-:root {
-    --gradiente1: cyan;
-    --gradiente2: purple;
+    background: #ccc;
 }
 
 html {
@@ -16,11 +11,11 @@ html {
 
 header {
     text-align: center;
-    background: rgba(177, 99, 99, 0);
+    background: #333;
     color: white;
 
     .logo {
-        width: 10%;
+        width: 30%;
     }
 
     .topnav {
@@ -32,6 +27,19 @@ header {
         text-align: center;
     }
 
+    .topnav .botaoM:hover {
+        background-color: #b4b4b4;
+        /* Altere a cor de fundo desejada */
+        transform: scale(1.05);
+        /* Aumenta o tamanho do botão ao passar o mouse */
+    }
+
+    /* Efeito de clique (ativo) */
+    .topnav .botaoM:active {
+        background-color: #999999;
+        /* Altere a cor de fundo desejada quando clicado */
+    }
+
     .topnav a {
         color: black;
         padding: 1% 2%;
@@ -41,7 +49,7 @@ header {
 
 main {
     margin: 3%;
-    color: white;
+    color: black;
 
     .subtitulo {
         text-align: center;
@@ -95,14 +103,23 @@ main {
                 padding: 9%;
             }
         }
+    }
 
-        .botao:hover {
-            background-color: #c43e3e;
-        }
+    .botao .enviar:hover {
+        background-color: #b4b4b4;
+        /* Altere a cor de fundo desejada */
+        transform: scale(1.05);
+        /* Aumenta o tamanho do botão ao passar o mouse */
+    }
 
-        .enviar {
-            border-radius: 10px;
-        }
+    /* Efeito de clique (ativo) */
+    .botao .enviar:active {
+        background-color: #999999;
+        /* Altere a cor de fundo desejada quando clicado */
+    }
+
+    .enviar {
+        border-radius: 10px;
     }
 
     .images {
@@ -123,7 +140,6 @@ main {
     }
 
     .mensagemErro {
-        color: white;
         padding: 1%;
     }
 
@@ -175,9 +191,10 @@ main {
             padding: 1%;
         }
     }
+
     .botao {
         text-align: center;
-        
+
 
         .enviar {
             border: none;
@@ -188,17 +205,30 @@ main {
 }
 
 footer {
-    background: white;
+    background: #333;
     text-align: center;
     padding: 1%;
     text-decoration: none;
 
     .logoInsta {
-        width: 1.5%;
+        width: 4%;
     }
 
-    .textoLink {
-        color: black;
+    .linkI {
+        color: white;
         text-decoration: none;
+    }
+
+    .linkI:hover {
+        background-color: #b4b4b4;
+        /* Altere a cor de fundo desejada */
+        transform: scale(1.05);
+        /* Aumenta o tamanho do botão ao passar o mouse */
+    }
+
+    /* Efeito de clique (ativo) */
+    .linkI:active {
+        background-color: #999999;
+        /* Altere a cor de fundo desejada quando clicado */
     }
 }
