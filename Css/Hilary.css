@@ -141,3 +141,9 @@ footer a:hover {
 /* Outros estilos específicos para a página */
 /* Adicione-os conforme necessário */
 
+img {
+    max-width: 400px;
+    max-height: 200px;
+  }
+  
+
