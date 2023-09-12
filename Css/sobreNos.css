@@ -1,16 +1,16 @@
 img {
-    max-width: 900px;
-    max-height: 500px;
+    max-width: 600px;
+    max-height: 300px;
     text-align: center;
   }
 
   main {
-    text-align:left; /* Adicione esta linha para centralizar o texto */
+    text-align:center; /* Adicione esta linha para centralizar o texto */
     padding: 20px;
-    background-color: #000000;
+    background-color: #0000006c;
     margin: 40px;
     border-radius: 0px;
-    box-shadow: 0 0 10px rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgb(90, 88, 88);
     font-family:'Times New Roman', Times, serif;
     color: aliceblue;
 }
