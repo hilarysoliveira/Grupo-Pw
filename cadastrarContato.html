@@ -32,30 +32,30 @@
         <div class="msg">
             <p class="mensagemErro" id="mensagemErro"></p>
         </div>
-        <form>
+        <form id="myForm" action="php/cadastrarContato.php" method="POST">
             <div class="elemento">
                 <label>Nome</label>
-                <input class="input">
+                <input class="input" name="nome_con" id="nome_con">
             </div>
             <div class="elemento">
                 <label>E-mail</label>
-                <input class="input">
+                <input class="input" name="email_con" id="email_con">
             </div>
             <div class="elemento">
                 <label>Telefone</label>
-                <input class="input">
+                <input class="input" name="telefone_con" id="telefone_con">
             </div>
             <div class="elemento">
                 <label>Rua e número</label>
-                <input class="input">
+                <input class="input" name="rua_numero_con" id="rua_numero_con">
             </div>
             <div class="elemento">
                 <label>Cidade</label>
-                <input class="input">
+                <input class="input" name="cidade_con" id="cidade_con">
             </div>
             <div class="elemento">
-                <label">Estado</label>
-                    <select class="input">
+                <label>Estado</label>
+                    <select class="input" name="estado_con" id="estado_con">
                         <option selected></option>
                         <option value="Acre">Acre</option>
                         <option value="Alagoas">Alagoas</option>
@@ -88,10 +88,10 @@
             </div>
             <div class="elemento">
                 <label>Motivo do contato</label>
-                <input class="input">
+                <input class="input" name="motivo_con" id="motivo_con">
             </div>
             <div class="elemento">
-                <input type="checkbox" class="checkbox">
+                <input type="checkbox" class="checkbox" name="autoriza_con" id="autoriza_con">
                 <label class="lastLabel">
                     Autorizo a HS Fotografias a entrar em contato comigo
                 </label>
