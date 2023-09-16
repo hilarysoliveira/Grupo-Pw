@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fazerLogin.css">
+    <title>Realizar Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h2>Login</h2>
+            <form action="php/fazerLogin.php" method="POST">
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+                </div>
+                <div class="form-group">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+                </div>
+                <button type="submit">Entrar</button>
+                <a class="outro" href="cadastrarUsuario.html">Cadastrar-se</a>
+            </form>
+            <a class="outro" href="home.html">Voltar à Home</a>
+        </div>
+    </div>
+</body>
+
+</html>

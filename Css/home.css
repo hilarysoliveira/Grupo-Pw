@@ -1,7 +1,7 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0%;
-    background: #ccc;
+    background-color: #ccc;
 }
 
 html {
@@ -208,12 +208,20 @@ footer {
     }
 
     .linkI:hover {
-        background-color: #b4b4b4; /* Altere a cor de fundo desejada */
-        transform: scale(1.05); /* Aumenta o tamanho do botão ao passar o mouse */
+        background-color: #b4b4b4;
+        /* Altere a cor de fundo desejada */
+        transform: scale(1.05);
+        /* Aumenta o tamanho do botão ao passar o mouse */
     }
-    
+
     /* Efeito de clique (ativo) */
     .linkI:active {
-        background-color: #999999; /* Altere a cor de fundo desejada quando clicado */
+        background-color: #999999;
+        /* Altere a cor de fundo desejada quando clicado */
+    }
+
+    .copy {
+        margin-top: 1%;
+        color: white;
     }
 }

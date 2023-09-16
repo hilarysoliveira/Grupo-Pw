@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/cadastrarContato.css">
-    <title>Contatar HS</title>
+    <link rel="stylesheet" href="../css/cadastrarUsuario.css">
+    <title>Cadastar-se</title>
 </head>
 <header>
     <img src="../imagens/logo.png" alt="" class="logo">
@@ -24,27 +24,31 @@
 
 <body>
     <?php
-    $_con = mysqli_connect('127.0.0.1', 'root', '', 'hsfotografias');
-    if ($_con === FALSE) {
-        echo "<h3>Não foi possível conectar ao Servidor de banco de dados.</h3>";
-    } else {
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Conectar ao banco de dados (substitua com suas credenciais)
+        $conexao = new mysqli('127.0.0.1', 'root', '', 'hsfotografias');
 
-        // Recupere os dados do formulário usando o método POST
-        $nome = $_POST["nome"];
-        $email = $_POST["email"];
-        $mensagem = $_POST["mensagem"];
-
-        // Crie e execute a consulta de inserção
-        $query = "INSERT INTO contato VALUES (null, '$nome', '$email', '$mensagem');";
-        $result = mysqli_query($_con, $query);
-
-        if ($result) {
-            echo "<h3>Os dados foram inseridos com sucesso.</h3>";
-        } else {
-            echo "<h3>Erro ao inserir os dados: " . mysqli_error($_con) . '</h3>';
+        // Verificar a conexão
+        if ($conexao->connect_error) {
+            die("<h3>Erro de conexão: " . $conexao->connect_error . "</h3>");
         }
 
-        mysqli_close($_con);
+        // Recuperar dados do formulário
+        $nome = $_POST["nome"];
+        $email = $_POST["email"];
+        $senha = $_POST["senha"];
+
+        // Inserir usuário no banco de dados (substitua com sua estrutura de tabela)
+        $sql = "INSERT INTO usuario VALUES (null, '$nome', '$email', '$senha')";
+
+        if ($conexao->query($sql) === TRUE) {
+            echo "<h3>Usuário cadastrado com sucesso.</h3>";
+        } else {
+            echo "<h3>Erro ao cadastrar usuário: " . $conexao->error . "</h3>";
+        }
+
+        // Fechar a conexão
+        $conexao->close();
     }
     ?>
     <main>

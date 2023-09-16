@@ -4,7 +4,9 @@ Cadastrar Contato - Diego
 
 Cadastrar Evento - Hilary
 
-Cadastrar Feedback - Diego
+Cadastrar Usuário - Diego
+
+Fazer Login - Diego
 
 Cadastrar Revelação - Hilary
 

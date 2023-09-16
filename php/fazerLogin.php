@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/cadastrarContato.css">
-    <title>Contatar HS</title>
+    <link rel="stylesheet" href="../css/fazerLogin.css">
+    <title>Realizar Login</title>
 </head>
 <header>
     <img src="../imagens/logo.png" alt="" class="logo">
@@ -24,27 +24,43 @@
 
 <body>
     <?php
-    $_con = mysqli_connect('127.0.0.1', 'root', '', 'hsfotografias');
-    if ($_con === FALSE) {
-        echo "<h3>Não foi possível conectar ao Servidor de banco de dados.</h3>";
-    } else {
+    // Configurar o fuso horário
+    date_default_timezone_set('America/Porto_Velho');
 
-        // Recupere os dados do formulário usando o método POST
-        $nome = $_POST["nome"];
-        $email = $_POST["email"];
-        $mensagem = $_POST["mensagem"];
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Conectar ao banco de dados (substitua com suas credenciais)
+        $conexao = new mysqli('127.0.0.1', 'root', '', 'hsfotografias');
 
-        // Crie e execute a consulta de inserção
-        $query = "INSERT INTO contato VALUES (null, '$nome', '$email', '$mensagem');";
-        $result = mysqli_query($_con, $query);
-
-        if ($result) {
-            echo "<h3>Os dados foram inseridos com sucesso.</h3>";
-        } else {
-            echo "<h3>Erro ao inserir os dados: " . mysqli_error($_con) . '</h3>';
+        // Verificar a conexão
+        if ($conexao->connect_error) {
+            die("<h3>Erro de conexão: " . $conexao->connect_error . "</h3>");
         }
 
-        mysqli_close($_con);
+        // Recuperar dados do formulário
+        $email = $_POST["email"];
+        $senha = $_POST["senha"];
+
+        // Verificar se o usuário existe no banco de dados (substitua com sua estrutura de tabela)
+        $sql = "SELECT * FROM usuario WHERE (email_usu='$email' AND senha_usu='$senha')";
+        $result = $conexao->query($sql);
+
+        if ($result->num_rows > 0) {
+            // Usuário encontrado, registrar a data e hora do login
+            $dataLogin = date('Y-m-d H:i:s'); // Obtém a data e hora atuais
+            $id_usu = $result->fetch_assoc()["id_usu"];
+            $sqlRegistro = "INSERT INTO login VALUES (null, '$dataLogin', '$id_usu')";
+
+            if ($conexao->query($sqlRegistro) === TRUE) {
+                echo "<h3>Login bem-sucedido!</h3>";
+            } else {
+                echo "<h3>Erro ao registrar data de login: " . $conexao->error . "</h3>";
+            }
+        } else {
+            echo "<h3>Usuário não encontrado ou senha incorreta.</h3>";
+        }
+
+        // Fechar a conexão
+        $conexao->close();
     }
     ?>
     <main>

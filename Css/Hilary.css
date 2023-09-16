@@ -8,7 +8,7 @@
 /* Estilos para o corpo da página */
 body {
     background-color: #f0f0f0;
-    font-family:Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif
 }
 
 
@@ -33,7 +33,7 @@ header p {
     font-size: 14px;
 }
 
-p{
+p {
     height: initial;
 }
 
@@ -77,7 +77,8 @@ form label {
 }
 
 label {
-    margin: 20px; /* Define 10 pixels de margem em todas as direções para todos os labels */
+    margin: 20px;
+    /* Define 10 pixels de margem em todas as direções para todos os labels */
 }
 
 form input[type="text"],
@@ -115,27 +116,35 @@ select {
     margin-left: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-   
+
 }
 
 /* Estilos gerais para o footer */
 footer {
-    background-color: #333; /* Cor de fundo do footer */
-    color: #fff; /* Cor do texto no footer */
-    text-align: center; /* Alinhamento de texto ao centro */
-    padding: 20px 0; /* Espaçamento interno (topo e base) */
+    background-color: #333;
+    /* Cor de fundo do footer */
+    color: #fff;
+    /* Cor do texto no footer */
+    text-align: center;
+    /* Alinhamento de texto ao centro */
+    padding: 20px 0;
+    /* Espaçamento interno (topo e base) */
 }
 
 /* Estilos para links no footer */
 footer a {
-    color: #fff; /* Cor dos links no footer */
-    text-decoration: none; /* Remover sublinhado dos links */
-    margin: 0 10px; /* Espaçamento horizontal entre os links */
+    color: #fff;
+    /* Cor dos links no footer */
+    text-decoration: none;
+    /* Remover sublinhado dos links */
+    margin: 0 10px;
+    /* Espaçamento horizontal entre os links */
 }
 
 /* Estilos para hover (quando o mouse passa sobre os links) */
 footer a:hover {
-    text-decoration: underline; /* Adicionar sublinhado ao passar o mouse */
+    text-decoration: underline;
+    /* Adicionar sublinhado ao passar o mouse */
 }
 
 /* Outros estilos específicos para a página */
@@ -144,6 +153,38 @@ footer a:hover {
 img {
     max-width: 400px;
     max-height: 200px;
-  }
-  
+}
 
+footer {
+    background: #333;
+    text-align: center;
+    padding: 1%;
+    text-decoration: none;
+
+    .logoInsta {
+        width: 4%;
+    }
+
+    .linkI {
+        color: white;
+        text-decoration: none;
+    }
+
+    .linkI:hover {
+        background-color: #b4b4b4;
+        /* Altere a cor de fundo desejada */
+        transform: scale(1.05);
+        /* Aumenta o tamanho do botão ao passar o mouse */
+    }
+
+    /* Efeito de clique (ativo) */
+    .linkI:active {
+        background-color: #999999;
+        /* Altere a cor de fundo desejada quando clicado */
+    }
+
+    .copy {
+        margin-top: 1%;
+        color: white;
+    }
+}
