@@ -27,7 +27,7 @@
 
 <body>
     
-    <form action="php/cadastrarEvento.php">
+    <form action="php/cadastrarEvento.php" method="post">
         <p>Preencha os campos com as Informações de endereço do ensaio</p>
         <label for="rua">Rua:</label>
         <input type="text" id="rua" name="rua" required><br>
@@ -44,13 +44,13 @@
         <label for="pais">País:</label>
         <input type="text" id="pais" name="pais" required><br>
 
-
+        <label for="data">Selecione a data do ensaio:</label>
+        <input type="date" id="data" name="data">
+        
         <label for="hora">Selecione a hora do ensaio:</label>
         <input type="time" id="hora" name="hora">
 
-        <label for="data">Selecione a data do ensaio:</label>
-        <input type="date" id="data" name="data">
-
+       
         <label for="tiposEnsaio">Escolha o tipo de ensaio fotográfico:</label>
     <select id="tiposEnsaio" name="tiposEnsaio">
         <option value="Retrato">Retrato</option>

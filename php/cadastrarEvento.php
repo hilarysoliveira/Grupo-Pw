@@ -13,12 +13,25 @@
 
 <body>
     <header>
-        <!-- Seu código de cabeçalho aqui -->
+    <img src="../imagens/logo.png" alt="" class="logo">
+    <p>A fotografia tem o poder de eternizar a efemeridade</p>
+    <nav class="topnav">
+        <a class="botaoM" href="../home.html">Home</a>
+        <a class="botaoM" href="../sobreNos.html">Sobre nós</a>
+        <a class="botaoM" href="../galeriaDeFotos.html">Galeria de fotos</a>
+        <a class="botaoM" href="../cadastrarContato.html">Entre em contato</a>
+        <a class="botaoM" href="../cadastrarEvento.html">Eventos</a>
+        <a class="botaoM" href="../cadastrarRevelacao.html">Revelações</a>
+        <a class="botaoM" href="../fazerLogin.html">Login</a>
+    </nav>
     </header>
 
     <?php
-    // Verifique se o formulário foi enviado
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $_con = mysqli_connect('127.0.0.1', 'root', '', 'hsfotografias');
+    if ($_con === FALSE) {
+        echo "<h3>Não foi possível conectar ao Servidor de banco de dados.</h3>";
+    } else {
+
         // Recupere os dados do formulário
         $rua = $_POST["rua"];
         $cidade = $_POST["cidade"];
@@ -29,24 +42,37 @@
         $hora = $_POST["hora"];
         $tiposEnsaio = $_POST["tiposEnsaio"];
 
-        // Aqui você pode fazer o que quiser com os dados, por exemplo, inseri-los em um banco de dados
-        // ou enviar por e-mail
+        echo $rua;
+        echo $cidade;
+        echo $estado;
+        echo $cep;
+        echo $pais;
+        echo $data;
+        echo $hora;
+        echo $tiposEnsaio;
 
-        // Exemplo: exibindo os dados na página
-        echo "<p>Dados do evento:</p>";
-        echo "Rua: " . $rua . "<br>";
-        echo "Cidade: " . $cidade . "<br>";
-        echo "Estado: " . $estado . "<br>";
-        echo "CEP: " . $cep . "<br>";
-        echo "País: " . $pais . "<br>";
-        echo "Data do ensaio: " . $data . "<br>";
-        echo "Hora do ensaio: " . $hora . "<br>";
-        echo "Tipo de ensaio: " . $tiposEnsaio . "<br>";
+
+        // Crie e execute a consulta de inserção
+        $query = "INSERT INTO contato VALUES (null, '$rua', '$cidade', '$estado', '$cep', '$pais',
+        '$data','$hora','$tiposEnsaio' );";
+        $result = mysqli_query($_con, $query);
+
+        if ($result) {
+            echo "<h3>Os dados foram inseridos com sucesso.</h3>";
+        } else {
+            echo "<h3>Erro ao inserir os dados: " . mysqli_error($_con) . '</h3>';
+        }
+
+    
+        mysqli_close($_con);
     }
+    
     ?>
 
     <footer>
-        <!-- Seu código de rodapé aqui -->
+    <a class="linkI" href="https://www.instagram.com/hilarysouzafotografias/"><img src="../imagens/logoInsta.png" alt="" class="logoInsta"></a>
+    <a class="linkI" href="https://www.instagram.com/hilarysouzafotografias/" class="textoLink">@HilarySouzaFotografias</a>
+    <p class="copy">&copy; 2023 Fotografias Inc.</p>
     </footer>
 </body>
 </html>

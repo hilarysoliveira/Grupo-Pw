@@ -21,3 +21,17 @@ data_hora_log datetime,
 id_usu_fk int,
 foreign key (id_usu_fk) references Usuario (id_usu)
 );
+
+create table Evento(
+id_eve int primary key auto_increment,
+rua_eve varchar(100),
+cidade_eve varchar(100),
+estado_eve varchar(100),
+cep_eve varchar(100),
+país_eve varchar(100),
+hora_eve time,
+data_eve date,
+tipo_eve varchar(100),
+id_usu_eve_fk int,
+foreign key (id_usu_eve_fk) references Usuario (id_usu) 
+);
