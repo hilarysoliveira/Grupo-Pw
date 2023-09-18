@@ -1,4 +1,4 @@
-Abra o xamp e ligue os módulos MySql e Apache. Clique em admin no servidor MySql e em importar, no site, para importar o script, que está na pasta bd do projeto.
+Abra o Xampp e ligue os módulos MySql e Apache. Clique em admin no servidor MySql e em importar, no site, para importar o script, que está na pasta bd do projeto.
 
 Responsabilidade das telas
 
