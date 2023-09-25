@@ -34,4 +34,16 @@ data_eve date,
 tipo_eve varchar(100),
 id_usu_eve_fk int,
 foreign key (id_usu_eve_fk) references Usuario (id_usu) 
-);
+); 
+
+create table Revelação(
+id_rev int primary key auto_increment,
+nome_rev varchar(100),
+email_rev varchar(100),
+telefone_rev varchar(100),
+quant_rev int,
+formato_rev varchar(100),
+cidade_rev varchar(100),
+estado_rev varchar(100),
+cep_rev varchar(100)
+)
