@@ -22,19 +22,20 @@ id_usu_fk int,
 foreign key (id_usu_fk) references Usuario (id_usu)
 );
 
-create table Evento(
-id_eve int primary key auto_increment,
-rua_eve varchar(100),
-cidade_eve varchar(100),
-estado_eve varchar(100),
-cep_eve varchar(100),
-país_eve varchar(100),
-hora_eve time,
-data_eve date,
-tipo_eve varchar(100),
-id_usu_eve_fk int,
-foreign key (id_usu_eve_fk) references Usuario (id_usu) 
-); 
+CREATE TABLE Evento (
+    id_eve INT PRIMARY KEY AUTO_INCREMENT,
+    rua_eve VARCHAR(100),
+    cidade_eve VARCHAR(100),
+    estado_eve VARCHAR(100),
+    cep_eve VARCHAR(100),
+    país_eve VARCHAR(100),
+    hora_eve TIME,
+    data_eve DATE,
+    tipo_eve VARCHAR(100),
+    id_usu_fk INT,
+    FOREIGN KEY (id_usu_fk) REFERENCES Usuario (id_usu)
+);
+
 
 create table Revelação(
 id_rev int primary key auto_increment,

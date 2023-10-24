@@ -29,47 +29,47 @@
 
   <main>
 
-
     <h2 class="subtitulo">Revelação de Fotos</h2>
     <div class="msg">
       <p class="mensagemErro" id="mensagemErro"></p>
     </div>
-    <form class="row g-3">
+
+    <form action="php/cadastrarRevelacao.php" method="post">
       <div class="col-md-6">
         <label for="inputNome" class="form-label">Nome</label>
-        <input type="text" class="form-control" id="inputNome">
+        <input type="text" class="form-control" id="nome" name="nome">
       </div>
       <div class="col-md-6">
         <label for="inputEmail" class="form-label">E-mail</label>
-        <input type="email" class="form-control" id="inputEmail">
+        <input type="email" class="form-control" id="email" name="email">
       </div>
       <div class="col-12">
         <label for="inputTelefone" class="form-label">Telefone</label>
-        <input type="tel" class="form-control" id="inputTelefone">
+        <input type="tel" class="form-control" id="telefone" name="telefone">
       </div>
 
 
       <div class="col-md-6">
         <label for="qtde" class="form-label">Quantidade fotos</label>
-        <input type="number" class="form-control" id="inputFotos">
+        <input type="number" class="form-control" id="quantidade" name="quantidade">
       </div>
       <div class="col-12">
         <label for="inputAddress" class="form-label">Formato</label>
-        <input type="text" class="form-control" id="inputFormato"
+        <input type="text" class="form-control" id="formato" name="formato"
           placeholder="Escreva o formato para a revelação das fotos">
       </div>
       <div class="col-12">
         <label for="inputAddress2" class="form-label">Medida</label>
-        <input type="text" class="form-control" id="inputMedida"
+        <input type="text" class="form-control" id="medida" name="medida"
           placeholder="Escreva a medida em que você quer as fotos">
       </div>
       <div class="col-md-6">
         <label for="inputCity" class="form-label">Cidade</label>
-        <input type="text" class="form-control" id="inputCidade" placeholder="Digite sua cidade">
+        <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Digite sua cidade">
       </div>
       <div class="col-md-4">
         <label for="inputState" class="form-label">Estado</label>
-        <select id="inputState" class="form-select">
+        <select id="estado" name="estado" class="form-select">
           <option selected="" value="">Selecione o Estado (UF)</option>
           <option value="Acre">Acre</option>
           <option value="Alagoas">Alagoas</option>
@@ -104,33 +104,19 @@
 
       <div class="col-md-2">
         <label for="inputZip" class="form-label">Código Postal</label>
-        <input type="text" onchange="validarCEP(this.value)" class="form-control" id="inputZip"
+        <input type="text" onchange="validarCEP(this.value)" class="form-control" id="cep" name="cep"
           placeholder="Digite seu CEP">
       </div>
 
+      <div class="botao">
 
-      <div class="col-12">
-        <div class="form-check">
-
-
-          <label class="form-check-label" for="gridCheck">
-            Selecione as fotos que deseja revelar
-            <div class="input-group mb-3">
-              <input type="file" class="form-control" id="buttonEnviar" aria-describedby="inputGroupFileAddon03"
-                aria-label="Upload" type="file" multiple />
-              <button class="enviar" onclick="revelacao()" type="submit" id="buttonEnviar">Salvar</button>
-            </div>
-          </label>
-        </div>
+        <button class="enviar" onclick="revelacao()" type="submit" id="buttonEnviar">Enviar Pedido</button>
       </div>
 
 
     </form>
 
-    <div class="botao">
-
-      <button class="enviar" onclick="revelacao()" type="submit" id="buttonEnviar">Enviar Pedido</button>
-    </div>
+    
 
 
     </div>
