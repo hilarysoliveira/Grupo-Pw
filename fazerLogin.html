@@ -5,15 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/fazerLogin.css">
+    <link rel="stylesheet" href="fazerLogin.css">
     <title>Realizar Login</title>
 </head>
+
+<header>
+    <img src="imagens/logo.png" alt="" class="logo">
+    <p>A fotografia tem o poder de eternizar a efemeridade</p>
+    <nav class="topnav">
+        <a class="botaoM" href="home.html">Home</a>
+        <a class="botaoM" href="sobreNos.html">Sobre nós</a>
+        <a class="botaoM" href="galeriaDeFotos.html">Galeria de fotos</a>
+        <a class="botaoM" href="cadastrarContato.html">Entre em contato</a>
+        <a class="botaoM" href="cadastrarEvento.html">Eventos</a>
+        <a class="botaoM" href="cadastrarRevelacao.html">Revelações</a>
+        <a class="botaoM" href="fazerLogin.html">Login</a>
+    </nav>
+</header>
 
 <body>
     <div class="container">
         <div class="form-box">
             <h2>Login</h2>
-            <form action="php/fazerLogin.php" method="POST">
+            <form action="fazerLogin.php" method="POST">
                 <div class="form-group">
                     <label for="email">E-mail:</label>
                     <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
@@ -25,7 +39,6 @@
                 <button type="submit">Entrar</button>
                 <a class="outro" href="cadastrarUsuario.html">Cadastrar-se</a>
             </form>
-            <a class="outro" href="home.html">Voltar à Home</a>
         </div>
     </div>
 </body>
