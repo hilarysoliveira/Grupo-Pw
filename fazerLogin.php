@@ -64,9 +64,9 @@
     }
     ?>
     <main>
-        <img src="imagens/Foto1.jpg" alt="" class="images">
-        <img src="imagens/Foto2.jpg" alt="" class="images">
-        <img src="imagens/Foto3.jpg" alt="" class="images">
+        <img src="imagens/foto4.png" alt="" class="images">
+        <img src="imagens/foto5.png" alt="" class="images">
+        <img src="imagens/foto6.png" alt="" class="images">
     </main>
 </body>
 
