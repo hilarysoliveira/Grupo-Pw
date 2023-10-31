@@ -8,45 +8,44 @@ header {
     text-align: center;
     background: #333;
     color: white;
-
-    .logo {
-        width: 50%;
-    }
-
-    .topnav {
-        background: white;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        text-align: center;
-    }
-
-    .topnav .botaoM:hover {
-        background-color: #b4b4b4;
-        /* Altere a cor de fundo desejada */
-        transform: scale(1.05);
-        /* Aumenta o tamanho do botão ao passar o mouse */
-    }
-
-    /* Efeito de clique (ativo) */
-    .topnav .botaoM:active {
-        background-color: #999999;
-        /* Altere a cor de fundo desejada quando clicado */
-    }
-
-    .topnav a {
-        color: black;
-        padding: 1% 2%;
-        text-decoration: none;
-    }
 }
 
-main {
-    .images {
-        width: 32%;
-        padding: 1%;
-    }
+.logo {
+    width: 50%;
+}
+
+.topnav {
+    background: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.topnav .botaoM:hover {
+    background-color: #b4b4b4;
+    /* Altere a cor de fundo desejada */
+    transform: scale(1.05);
+    /* Aumenta o tamanho do botão ao passar o mouse */
+}
+
+/* Efeito de clique (ativo) */
+.topnav .botaoM:active {
+    background-color: #999999;
+    /* Altere a cor de fundo desejada quando clicado */
+}
+
+.topnav a {
+    color: black;
+    padding: 1% 2%;
+    text-decoration: none;
+}
+
+        overflow: hidden;
+.images {
+    width: 32%;
+    padding: 1%;
 }
 
 .container {
@@ -120,31 +119,31 @@ footer {
     text-align: center;
     padding: 1%;
     text-decoration: none;
+}
 
-    .logoInsta {
-        width: 4%;
-    }
+.logoInsta {
+    width: 4%;
+}
 
-    .linkI {
-        color: white;
-        text-decoration: none;
-    }
+.linkI {
+    color: white;
+    text-decoration: none;
+}
 
-    .linkI:hover {
-        background-color: #b4b4b4;
-        /* Altere a cor de fundo desejada */
-        transform: scale(1.05);
-        /* Aumenta o tamanho do botão ao passar o mouse */
-    }
+.linkI:hover {
+    background-color: #b4b4b4;
+    /* Altere a cor de fundo desejada */
+    transform: scale(1.05);
+    /* Aumenta o tamanho do botão ao passar o mouse */
+}
 
-    /* Efeito de clique (ativo) */
-    .linkI:active {
-        background-color: #999999;
-        /* Altere a cor de fundo desejada quando clicado */
-    }
+/* Efeito de clique (ativo) */
+.linkI:active {
+    background-color: #999999;
+    /* Altere a cor de fundo desejada quando clicado */
+}
 
-    .copy {
-        margin-top: 1%;
-        color: white;
-    }
+.copy {
+    margin-top: 1%;
+    color: white;
 }
