@@ -37,7 +37,8 @@
                 </div>
                 <div class="form-group">
                     <label class="labels" for="senha">Senha:</label>
-                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required pattern="^(?=(?:\D*\d){0,})(?!(\d)\1{2,}).{8,}$"
+                    title="A senha deve ter pelo menos 8 caracteres e não pode conter sequências de 3 ou mais dígitos consecutivos.">
                 </div>
                 <button type="submit">Cadastrar</button>
                 <a class="outro" href="fazerLogin.html">Login</a>

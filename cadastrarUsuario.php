@@ -38,24 +38,27 @@
         $email = $_POST["email"];
         $senha = $_POST["senha"];
 
-        // Inserir usuário no banco de dados (substitua com sua estrutura de tabela)
-        $sql = "INSERT INTO usuario VALUES (null, '$nome', '$email', '$senha')";
+        // Verificar se o email já está em uso
+        $verificar_email = "SELECT * FROM usuario WHERE email_usu = '$email'";
+        $resultado = $conexao->query($verificar_email);
 
-        if ($conexao->query($sql) === TRUE) {
-            echo "<h3>Usuário cadastrado com sucesso.</h3>";
+        if ($resultado->num_rows > 0) {
+            echo "<h3 style='margin: 10%'>Este email já está em uso. Por favor, escolha outro email.</h3>";
         } else {
-            echo "<h3>Erro ao cadastrar usuário: " . $conexao->error . "</h3>";
+            // Inserir usuário no banco de dados (substitua com sua estrutura de tabela)
+            $sql = "INSERT INTO usuario VALUES (null, '$nome', '$email', '$senha')";
+
+            if ($conexao->query($sql) === TRUE) {
+                echo "<h3 style='margin: 10%'>Usuário cadastrado com sucesso.</h3>";
+            } else {
+                echo "<h3 style='margin: 10%'>Erro ao cadastrar usuário: " . $conexao->error . "</h3>";
+            }
         }
 
         // Fechar a conexão
         $conexao->close();
     }
     ?>
-    <main>
-        <img src="imagens/foto4.png" alt="" class="images">
-        <img src="imagens/foto5.png" alt="" class="images">
-        <img src="imagens/foto6.png" alt="" class="images">
-    </main>
 </body>
 
 <footer>

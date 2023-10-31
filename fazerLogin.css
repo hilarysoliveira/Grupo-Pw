@@ -43,6 +43,7 @@ header {
 }
 
 main {
+    margin-top: 0;
     .images {
         width: 32%;
         padding: 1%;
