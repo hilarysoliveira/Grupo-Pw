@@ -52,22 +52,25 @@
 
             if ($conexao->query($sqlRegistro) === TRUE) {
                 echo "<h3>Login bem-sucedido!</h3>";
+    ?>
+                <main>
+                    <img src="imagens/foto4.png" alt="" class="images">
+                    <img src="imagens/foto5.png" alt="" class="images">
+                    <img src="imagens/foto6.png" alt="" class="images">
+                </main>
+    <?php
             } else {
-                echo "<h3>Erro ao registrar data de login: " . $conexao->error . "</h3>";
+                echo "<h3 style='margin: 10%'>Erro ao registrar data de login: " . $conexao->error . "</h3>";
             }
         } else {
-            echo "<h3>Usuário não encontrado ou senha incorreta.</h3>";
+            echo "<h3 style='margin: 10%'> Usuário não encontrado ou senha incorreta.</h3>";
         }
 
         // Fechar a conexão
         $conexao->close();
     }
     ?>
-    <main>
-        <img src="imagens/Foto1.jpg" alt="" class="images">
-        <img src="imagens/Foto2.jpg" alt="" class="images">
-        <img src="imagens/Foto3.jpg" alt="" class="images">
-    </main>
+
 </body>
 
 <footer>

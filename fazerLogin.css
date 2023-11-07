@@ -43,6 +43,7 @@ header {
 }
 
 main {
+    margin-top: 0;
     .images {
         width: 32%;
         padding: 1%;
@@ -53,7 +54,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
 }
 
 .form-box {

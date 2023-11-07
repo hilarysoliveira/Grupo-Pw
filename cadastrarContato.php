@@ -38,10 +38,24 @@
         $query = "INSERT INTO contato VALUES (null, '$nome', '$email', '$mensagem');";
         $result = mysqli_query($_con, $query);
 
-        if ($result) {
-            echo "<h3>Os dados foram inseridos com sucesso.</h3>";
+        $destinatario = "udiegoviana@gmail.com";
+
+        // Assunto do email
+        $assunto = "Nova mensagem de contato de $nome";
+
+        // Corpo do email
+        $corpo = "Nome: $nome\n";
+        $corpo .= "Email: $email\n";
+        $corpo .= "Mensagem:\n$mensagem";
+
+        // Cabeçalhos do email
+        $cabecalhos = "From: $email\r\n";
+
+        // Tente enviar o email
+        if (mail($destinatario, $assunto, $corpo, $cabecalhos)) {
+            echo "<h3>Os dados foram inseridos com sucesso e o email foi enviado.</h3>";
         } else {
-            echo "<h3>Erro ao inserir os dados: " . mysqli_error($_con) . '</h3>';
+            echo "<h3>Erro ao inserir os dados e ao enviar o email.</h3>";
         }
 
         mysqli_close($_con);
