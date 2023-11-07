@@ -151,8 +151,9 @@ footer a:hover {
 /* Adicione-os conforme necessário */
 
 img {
-    max-width: 400px;
-    max-height: 200px;
+   text-align: center;
+   width: 50%;
+   height: 50%;
 }
 
 footer {
